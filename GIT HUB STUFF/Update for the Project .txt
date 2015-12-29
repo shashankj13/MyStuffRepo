@@ -1,0 +1,59 @@
+<div id="addSkillsDialog" style="display: none;">
+					<h:form prependId="false">
+						<table align="center">
+							<caption>
+								<b>Add Skills</b>
+							</caption>
+							<tr>
+								<th align="right">Skills:</th>
+								<td><h:inputText value="#{managerBean.skillName}" /></td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center"><h:commandButton
+										value="Add" action="#{managerBean.addNewSkill}" /></td>
+							</tr>
+						</table>
+					</h:form>
+				</div>
+				
+				
+				
+<td><h:commandButton value="Add Skills" class="myButton" id="addSkillsButton"/></td>
+
+
+
+
+
+
+---------------------------------------------------------------------------Manger Bean-----------------------------------------------------------------------
+
+public String addNewSkill(){
+		Skill skill= new Skill();
+		skill.setSkillName(skillName);
+		managerService.addNewSkill(skill);
+		return "welcomeManager.xhtml?faces-redirect=true";
+	}
+-------------------------------------------------------------------------ManagerDaoImpl--------------------------------------------------------------------------
+
+
+
+	@Override
+	public void addNewSkill(Skill skill) {
+		String query= "insert into skill (skillName) values ("+skill.getSkillName()+")";
+		update(query);
+		
+	}
+-----------------------------------------------------------------------------------------.js file-----------------------------------------------------------------------
+
+$(document).ready(function() {
+	$("#addSkillsButton").click("click", function() {
+		$("#addSkillsDialog").dialog({
+			
+			height : 180,
+			width : 600
+			
+		});
+
+	});
+	
+});

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script type="text/javascript" src="externalJavaScript.js"></script>
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="externalCSS.css">
+</head>
+
+<body>
+	<div id="main">
+		<div id="left">
+			<input type="submit" value="ADD Employee" id="add">
+		</div>
+		<div id="right">
+			<div id="rightUpper"></div>
+			<div id="rightLower">
+
+				<div id="dialog" title="Employee Detials">
+				<form action="">
+					<table border="0">
+						<tr>
+							<td><input type="file" name="image" onchange="read(this)"/></td>
+							<td> <img  src="#" id="image"></td>
+						
+						</tr>
+						<tr>
+							<td>Employee Name :</td>
+							<td>  <input type="text" name="name"></td>
+							 
+						</tr>
+						<tr>
+							<td>Employee Contact :</td>
+							<td> <input type="text" name="contact"></td>
+						</tr>
+						<tr>
+							<td>Employee Email :</td> 
+							<td><input type="text" name="email"></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"> <input type="submit" value="ADD"> </td>
+						
+						</tr>
+					</table>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

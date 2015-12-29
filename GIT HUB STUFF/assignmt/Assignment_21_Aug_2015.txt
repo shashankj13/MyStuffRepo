@@ -1,0 +1,39 @@
+1. Create a view that list customer name salespeople name their cities and ids.
+use this view to join with orders table on cnum.
+
+2. create a function to print with 
+"This SALESPEOPLE(prm1) has CUSTOMER(prm2) int the CITY(prm3)"
+
+3.Create a function 
+According to the rating passed if rating above 300 then  print excellent
+if above 200 good
+else
+average.
+
+
+4.function 
+print first 3 letters of whatever values passed
+
+
+
+5. Create Stored procedure to Print all data of customer according to the city passed
+
+6. Create Stored procedure  ,when rating is given result shoud come according to rating 
+else if blank is passed to display all rating
+
+
+7. Create Stored procedure when salespeople name passed its comm % should be displayed
+
+FOR ALL TRIGGERSV YOU CAN CREATE TABLE EVENT_LOG WITH ID,DATE,TIME,REMERKS ETC. COLUMNS
+
+8. create a trigger when record updated  in resource table
+
+9. create trigger when records deleted from resource table
+
+10. create case query to print first three letters of city from customer table.
+
+11. searching according to case sensitive .
+
+12.Create fucntion returning decimal value of total amount of cusomter order taking CNUM as input parameter.
+
+13.Select customer having order value more than 100 using above function in where cLAUSE.
