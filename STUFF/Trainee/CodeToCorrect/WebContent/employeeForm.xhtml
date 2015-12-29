@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+	<style type="text/css">
+	.oddRow{
+		background-color: #ccc;
+	}
+	.evenRow{
+		background-color: #ff8;
+	}
+	.header{
+		background-color: #666666;
+		color: #fff;
+	}
+	
+	</style>
+</h:head>
+<h:body>
+	<h:dataTable value="#{employeeDataBean.employeeList}" var="emp" rowClasses="oddRow,evenRow" headerClass="header">
+		<f:facet name="caption">Employee Information</f:facet>
+		<h:column>
+		<f:facet name="header">Employee Id</f:facet>
+			#{emp.id}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Name</f:facet>
+			#{emp.name}
+		</h:column>
+		
+		<h:column>
+			<f:facet name="header">Department</f:facet>
+			#{emp.department}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Action</f:facet>
+			<h:commandButton value="Edit"/>
+			<h:commandButton value="Delete"/>
+		</h:column>
+	</h:dataTable>
+
+</h:body>
+</html>

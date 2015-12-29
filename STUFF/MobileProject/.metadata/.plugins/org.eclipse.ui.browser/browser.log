@@ -1,0 +1,10 @@
+
+Oct 26, 2015 10:06:02.86 NEW SESSION
+Oct 26, 2015 10:06:02.86 1445834162842	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Nov 05, 2015 18:49:57.27 NEW SESSION
+Nov 05, 2015 18:49:57.27 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Nov 05, 2015 18:49:57.27 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Nov 05, 2015 18:49:57.27 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Nov 05, 2015 18:51:56.45 Performance warning: Async animation disabled because frame size (10970, 100) is bigger than the viewport (1537, 828) or the visual rectangle (10970, 100) is larger than the max allowable value (17895698) [div with id 'L28358bb1']
+Nov 05, 2015 18:51:56.67 Performance warning: Async animation disabled because frame size (10970, 100) is bigger than the viewport (1537, 828) or the visual rectangle (10970, 100) is larger than the max allowable value (17895698) [div with id 'Le5a6f36d']

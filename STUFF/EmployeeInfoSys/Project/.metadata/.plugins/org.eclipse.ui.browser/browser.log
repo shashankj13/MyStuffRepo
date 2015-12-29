@@ -1,0 +1,5 @@
+
+Dec 17, 2015 13:05:51.74 NEW SESSION
+Dec 17, 2015 13:05:51.74 1450337751730	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Dec 17, 2015 16:25:35.84 Performance warning: Async animation disabled because frame size (652, 5235) is bigger than the viewport (755, 812) or the visual rectangle (652, 5235) is larger than the max allowable value (17895698) [div]
+Dec 17, 2015 16:25:46.82 Performance warning: Async animation disabled because frame size (652, 9440) is bigger than the viewport (755, 812) or the visual rectangle (652, 9440) is larger than the max allowable value (17895698) [div]

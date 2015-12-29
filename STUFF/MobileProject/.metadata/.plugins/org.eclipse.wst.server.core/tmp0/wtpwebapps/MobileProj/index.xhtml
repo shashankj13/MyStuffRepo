@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+
+	<style>
+#wrapper {
+	height: 600px;
+	width: 1000px;
+	float: left;
+	vertical-align: middle;
+	background-image: url("login.jpg");
+	background-color: black;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+
+.header {
+	width: 850px;
+	height: 60px;
+	padding: 20px;
+	background-image: url("gray.jpg");
+	background-color: white;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.admin {
+	height: 300px;
+	width: 300px;
+	float: left;
+	background-image: url("gray.jpg");
+	margin-left: 130px;
+	margin-top: 20px;
+}
+
+.user {
+	height: 300px;
+	width: 300px;
+	margin-right: 20px;
+	float: left;
+	background-image: url("gray.jpg");
+	margin-left: 130px;
+	margin-top: 20px;
+}
+</style>
+</h:head>
+<h:body>
+	<div id="wrapper">
+
+
+		<div class="header">
+			<center>
+			<h1 style="color: white;">Welcome</h1>
+			</center>
+			center>
+		</div>
+
+		<div class="admin">
+			<center>
+			<table>
+				<tr>
+					<td colspan="2"><h:graphicImage value="admin.png" width="256"
+							height="256"></h:graphicImage></td>
+				</tr>
+				<h:form>
+				<tr>
+					<td colspan="2" align="center"><h:commandButton id="admin"
+							value="Admin" action="adminlogin?faces-redirect=true"></h:commandButton></td>
+				</tr>
+				</h:form>
+			</table>
+			</center>
+		</div>
+
+		<div class="user">
+
+			<center>
+			<table>
+				<tr>
+					<td colspan="2"><h:graphicImage
+							value="C:\Users\aditya.moghe\Desktop\user.png" width="256"
+							height="256"></h:graphicImage></td>
+				</tr>
+				<h:form>
+				<tr>
+					<td colspan="2" align="center"><h:commandButton id="user"
+							value="User" action="customerlogin?faces-redirect=true"></h:commandButton></td>
+				</tr>
+				</h:form>
+			</table>
+			</center>
+		</div>
+
+	</div>
+
+
+</h:body>
+</html>

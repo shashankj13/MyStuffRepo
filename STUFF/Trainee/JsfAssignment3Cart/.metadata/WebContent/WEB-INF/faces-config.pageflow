@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14453414231560" configfile="/JsfAssignment3Cart/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="275" y="143" id="pf14453414826851" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" outlinks="pf144534784610910 pf144534791399512" inlinks="pf144534856293214" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="shopping.xhtml" x="680" y="245" id="pf144534784610911" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf144534784610910" path="/shopping.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registration.xhtml" x="560" y="113" id="pf144534791399513" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf144534856293214" inlinks="pf144534791399512" path="/registration.xhtml"/>
+  <links id="pf144534784610910" target="pf144534784610911" source="pf14453414826851" outcome="shopping"/>
+  <links id="pf144534791399512" target="pf144534791399513" source="pf14453414826851"/>
+  <links id="pf144534856293214" target="pf14453414826851" source="pf144534791399513"/>
+</pageflow:Pageflow>

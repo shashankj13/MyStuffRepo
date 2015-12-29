@@ -1,0 +1,16 @@
+package com.yash.demo;
+
+class A{
+	
+}
+
+class B extends A{
+	
+}
+
+class ThreadDemo{
+	public static void main(String ars[]){
+		
+		B b = (B) new A();
+	}
+}

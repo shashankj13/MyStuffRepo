@@ -1,0 +1,11 @@
+package com.yash.jspservlet.domain;
+
+public class Employee {
+	
+	private int employeeId;
+	private String name;
+	private String city;
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.yash.demo;
+
+public class Threaddemo implements Runnable{
+	
+	
+	public void run() {
+		
+	}
+	
+	public int run(){
+		
+	}
+	
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="addCss.css">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#add').click(function() {
+		var field = prompt("Enter Field Name", "Default");
+		var type = prompt("Enter Field Type ", "text/password/number");
+		if (field!= null && type!= null) {		
+			   	    
+		            $('.main').append('<td><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></td>');
+		}
+	});
+	$('.main').on("click",".remove_field", function(){ 
+        $(this).parent('div').remove();
+   });
+});
+
+
+</script>
+</head>
+
+<body bgcolor="black">
+	<div class="maindiv">
+		<marquee>
+			<div class="header">
+				<a href="home" class="a">Home</a> <a href="home" class="a">About
+					Us</a> <a href="home" class="a">Services</a> <a href="home" class="a">Contact
+					Us</a>
+			</div>
+		</marquee>
+
+		<div class="bodydiv">
+			<ul>
+				<li>ROW NUMBER 900</li>
+				<li>ROW NUMBER 800</li>
+				<li>ROW NUMBER 600</li>
+				<li>ROW NUMBER 540</li>
+				<li>ROW NUMBER 500</li>
+				<li>ROW NUMBER 100</li>
+			</ul>
+
+			<div class="formdiv">
+				<form>
+					<table>
+
+						<tr>
+							<td>
+								<button id="add">Add Field</button>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Book Name :</td>
+							<td><input type="text" name="bookname" class="bookname">&nbsp;</td>
+						</tr>
+
+						<tr class="main">
+							<button class="inside">Add More Fields</button>
+							<div>
+								<input type="text" name="mytext[]">
+							</div>
+						</tr>
+
+
+						<tr>
+							<td><input type="submit" name="buttom"></td>
+						</tr>
+
+
+
+					</table>
+				</form>
+
+				
+			</div>
+
+		</div>
+
+		<div class="footer">FOOTER</div>
+
+	</div>
+
+
+
+</body>
+</html>

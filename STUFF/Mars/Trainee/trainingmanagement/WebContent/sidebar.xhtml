@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition>
+	<div id="leftdiv" style="float: left;">
+
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a href="welcome.xhtml" class="tooltips"> <img src="1.jpg"
+				alt="1 not load" height="40px" width="40px" /> <span>DASHBOARD</span>
+			</a>
+
+
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<h:form>
+				<h:commandLink action="#{courseBean.getAllCourses}" class="tooltips">
+					<img src="2.png" alt="2 not load" height="40px" width="40px" />
+					<span>COURSES</span>
+				</h:commandLink>
+			</h:form>
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a class="tooltips"> <img src="3.png" alt="3 not load"
+				height="40px" width="40px" /><span>PEOPLE</span>
+			</a>
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a class="tooltips"> <img src="4.png" alt="4 not load"
+				height="40px" width="40px" /><span>TEAM</span>
+			</a>
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a class="tooltips"> <img src="5.png" alt="5 not load"
+				height="40px" width="40px" /><span>REPORTS</span>
+			</a>
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a class="tooltips"> <img src="6.png" alt="6 not load"
+				height="40px" width="40px" /><span>MESSAGES</span>
+			</a>
+		</div>
+		<div
+			style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+			<a class="tooltips"> <img src="7.png" alt="7 not load"
+				height="40px" width="40px" /><span>SETTINGS</span>
+			</a>
+		</div>
+
+	</div>
+
+
+</ui:composition>
+</html>

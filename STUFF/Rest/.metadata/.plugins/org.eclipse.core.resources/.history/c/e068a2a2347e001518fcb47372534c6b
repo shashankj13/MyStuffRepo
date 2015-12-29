@@ -1,0 +1,12 @@
+package com.yash.restproj.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/RestClass")
+public class RestClass {
+	
+	@GET
+	@Path("/users")
+
+}

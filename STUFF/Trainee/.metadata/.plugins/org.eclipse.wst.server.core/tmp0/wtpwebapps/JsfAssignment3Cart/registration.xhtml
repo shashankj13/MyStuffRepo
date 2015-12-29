@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+
+	<style type="text/css">
+table {
+	align: center;
+	margin-top: 200px;
+	margin-left: 500px;
+	height: 200px;
+	width: 400px;
+}
+
+body {
+	background-color: black;
+}
+</style>
+</h:head>
+<h:body>
+	<h:form prependId="false">
+		<table>
+			<tr>
+				<td colspan='3' align="center" style="color: white"><span
+					id="showInfo"> Registration Page </span></td>
+			</tr>
+			<tr>
+				<td style="color: white">Name</td>
+				<td><h:inputText id="name" required="true" value="#{customerBean.name}">
+					</h:inputText></td>
+				<td><h:message for="name" style="color:red" /></td>
+			</tr>
+			<tr>
+				<td style="color: white">Contact</td>
+				<td><h:inputText id="contact" required="true" value="#{customerBean.contact}"/></td>
+				<td><h:message for="contact" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td style="color: white">Email</td>
+				<td><h:inputText id="email" required="true" value="#{customerBean.email}">
+					</h:inputText></td>
+				<td><h:message for="email" style="color:red" /></td>
+			</tr>
+			<tr>
+				<td style="color: white">Address</td>
+				<td><h:inputTextarea cols="16" rows="2" id="address"
+						required="true" value="#{customerBean.address}"/></td>
+				<td><h:message for="address" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td style="color: white">User Name</td>
+				<td><h:inputText id="userName" required="true" value="#{customerBean.userName}">
+					</h:inputText></td>
+				<td><h:message for="userName" style="color:red" /></td>
+			</tr>
+			<tr>
+				<td style="color: white">Password</td>
+				<td><h:inputSecret id="password" required="true" value="#{customerBean.password}"/></td>
+				<td><h:message for="password" style="color:red" /></td>
+			</tr>
+
+			<tr>
+
+				<td align="center"><h:commandButton type="submit"
+						id="registration" action="#{customerBean.register}" value="Confirm" /></td>
+
+				<td align="center"><h:commandButton type="reset" id="reset"
+						action="login" value="Reset!" /></td>
+			</tr>
+		</table>
+	</h:form>
+</h:body>
+</html>

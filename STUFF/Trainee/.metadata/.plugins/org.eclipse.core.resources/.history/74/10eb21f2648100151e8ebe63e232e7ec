@@ -1,0 +1,9 @@
+package com.yash.curdcdi.domain;
+
+public class CandidateProfessionalInfo extends Candidate {
+	
+	private Candidate candidate;
+	private String city;
+	private int contact;
+
+}

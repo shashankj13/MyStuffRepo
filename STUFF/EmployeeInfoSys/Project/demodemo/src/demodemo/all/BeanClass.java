@@ -1,0 +1,58 @@
+package demodemo.all;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+
+@ManagedBean
+@SessionScoped
+public class BeanClass {
+
+	@EJB LocalEJBLocal class1;
+	
+	List<String> skillList;
+	List<String> skillEfficiencyList;
+	private String skillValue;
+	private String skillEfficiencyValue;
+
+	public String getSkillValue() {
+		return skillValue;
+	}
+	public void setSkillValue(String skillValue) {
+		this.skillValue = skillValue;
+	}
+	public String getSkillEfficiencyValue() {
+		return skillEfficiencyValue;
+	}
+	public void setSkillEfficiencyValue(String skillEfficiencyValue) {
+		this.skillEfficiencyValue = skillEfficiencyValue;
+	}
+
+	
+	public List<String> getSkillList() {
+		skillList = class1.getSkillList();
+		return skillList;
+	}
+	public void setSkillList(List<String> skillList) {
+		this.skillList = skillList;
+	}
+	public List<String> getSkillEfficiencyList() {
+		skillEfficiencyList = class1.getSkillEfficiencyList();
+		return skillEfficiencyList;
+	}
+	public void setSkillEfficiencyList(List<String> skillEfficiencyList) {
+		this.skillEfficiencyList = skillEfficiencyList;
+	}
+	
+	public String addSkillAndEfficiency(){
+		// get empid from email id and		
+		// get skill id
+		// get skilleff id
+		//insert into table
+		
+		return null;
+	}
+}

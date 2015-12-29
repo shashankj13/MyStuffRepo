@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery.js" ></script>
+<script type="text/javascript" src="jquery-ui.js" ></script>
+<script type="text/css" src="jquery-ui.css" ></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#add').click(function() {
+		var title = prompt("Enter Title For New Field");		
+		var type = prompt("Enter Type Of Field");
+		if (title != null && type != null) {
+		$('tr.field').after('<tr  id="'+ type.concat(title)+ '"><td >'
+		+ title+ ':</td><td><input type="'+type+ '" id="'+ type.concat(title)
+		+  '" ></td><td><input type="button" id="'+ type.concat(title)
+		+ '" value="-" class="remove"></td></div></tr>');
+
+		} else {
+			alert("No Value Found ");
+		}
+
+		});
+
+		$(document).on('click', '.remove', function() {
+			var id=$(this).closest('tr').attr('id');
+			$('#'+id).remove();
+
+		});
+});
+
+
+</script>
+<link rel="stylesheet" href="cssfile.css">
+
+</head>
+<body>
+
+	<div id="header">
+		<a href="home" class="a">Home</a> <a href="home" class="a">About
+			Us</a> <a href="home" class="a">Services</a> <a href="home" class="a">Contact
+			Us</a>
+
+
+	</div>
+
+	<div id="mainbodydiv">
+		<div id="description"></div>
+
+
+		<div id="bodydiv">
+
+			Form <br /> <input type="button" id="add" value="Add Field">
+			<input type="button" id="show" value="Show">
+
+			<form id="form" action="ControllerServlet" method="get">
+				<table>
+					<tr>
+						<td>Book:</td>
+						<td><input type="text" id="userName"
+							placeholder="Enter Book Name"></td>
+					</tr>
+					
+					<tr class="field">
+					</tr>
+					
+					<tr>
+						<td colspan="3" align="center">
+						<input type="submit" id="submit" value="sumbit" ></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	
+	
+	<div id="footer">
+		<a href="home" class="a">Home</a> <a href="home" class="a">About
+			Us</a> <a href="home" class="a">Services</a> <a href="home" class="a">Contact
+			Us</a>
+	</div>
+
+
+</body>
+</html>

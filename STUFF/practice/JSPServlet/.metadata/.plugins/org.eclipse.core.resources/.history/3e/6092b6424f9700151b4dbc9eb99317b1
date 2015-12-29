@@ -1,0 +1,17 @@
+package com.yash.jspservlet.service;
+
+import java.util.List;
+
+import com.yash.jspservlet.dao.EmployeeDao;
+import com.yash.jspservlet.domain.Employee;
+
+public class EmployeeService {
+		
+	public List<Employee> fetchAllEmployee(){
+		EmployeeDao dao = new EmployeeDao();
+		List<Employee> list = dao.getAllEmployee();
+		System.out.println("IN SERVICE --------" +list);
+		return list;
+	}
+
+}

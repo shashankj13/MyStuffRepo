@@ -1,0 +1,101 @@
+@CHARSET "ISO-8859-1";
+
+#container {
+	border : 3px solid;
+	color: blue;
+	text-shadow: green;
+}
+
+body {
+	background-color: black;
+}
+
+div {
+	color: white;
+	border: 1px solid;
+	margin: 5px;
+}
+
+#men {
+	height: 100px;
+	width: 60px;
+}
+
+#women {
+	height: 100px;
+	width: 60px;
+}
+
+#child {
+	height: 100px;
+	width: 60px;
+}
+
+#leftbodydiv{
+	float: left;
+}
+
+#menChild , #womenChild , #childChild{
+	height: 450px;
+	width: 500px;
+	color: green;
+	margin-left: 250px;
+}
+
+#inner1 {
+	height:200px;
+	width: 200px;
+	float: left;
+}
+ #inner2{
+	height:200px;
+	width: 200px;
+	float: left;
+}
+
+#inner3  {
+	height:200px;
+	width: 200px;
+	float: left;
+}
+#inner4{
+	height:200px;
+	width: 200px;
+	float: left;
+}
+
+#showcart{
+	height:200px;
+	width: 400px;
+	float: left;
+}
+
+#heading{
+	margin-left:900px;
+	height:60px;
+	width: 200px;
+	
+}
+
+#divid{
+	float: left;
+	width: 100px;
+}
+
+#logoutdiv{
+	float: left;
+}
+
+#cartdiv{
+	
+	width: 150px;
+	height: 40px;
+	float: left;
+}
+
+#dialog{
+	
+	color: white;
+	background-color: black;
+	border-color: black;
+}

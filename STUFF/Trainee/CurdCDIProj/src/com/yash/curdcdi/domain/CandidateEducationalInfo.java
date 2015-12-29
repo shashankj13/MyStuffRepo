@@ -1,0 +1,27 @@
+package com.yash.curdcdi.domain;
+
+public class CandidateEducationalInfo extends Candidate {
+	private float highersec; 
+	private float seniorsec;
+	private Candidate candidate;
+	
+	public float getHighersec() {
+		return highersec;
+	}
+	public void setHighersec(float highersec) {
+		this.highersec = highersec;
+	}
+	public float getSeniorsec() {
+		return seniorsec;
+	}
+	public void setSeniorsec(float seniorsec) {
+		this.seniorsec = seniorsec;
+	}
+	public Candidate getCandidate() {
+		return candidate;
+	}
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
+	}
+
+}

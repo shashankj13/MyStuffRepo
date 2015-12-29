@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+	<div
+		style="width: 100%; background-color: #515151; font-size: 15px; line-height: 48px; background: rgb(); color: threeddarkshadow;; margin-bottom: 20px;">
+
+		<!-- div style="float: left; size: auto;">
+			<img src="tmslogo.png" alt="NOT FOUND" height="40px" width="120px"></img>
+		</div>
+
+		<div style="margin-left: 90%;">
+			
+		</div> -->
+		<h:form>
+			<table>
+
+				<tr>
+					<td style="border-right: 1px solid black ;  padding-right: 200px"><img
+						src="logo.png" alt="NOT FOUND" height="70px" width="170px"></img>
+					</td>
+					
+					<td style="border-right: 1px solid black ;color: white ; padding-right: 180px"> 
+						Yash Technologies Private Limited
+					</td>
+
+					<td style="color:white; padding-right: 350px;">Welcome!! <h:outputText
+							value="#{userBean.name}" />
+
+					</td>
+
+					<td><h:commandButton action="#{userBean.logout}"
+							value="signout" class="signout-header">
+						</h:commandButton></td>
+
+				</tr>
+
+			</table>
+		</h:form>
+
+	</div>
+</h:body>
+</html>

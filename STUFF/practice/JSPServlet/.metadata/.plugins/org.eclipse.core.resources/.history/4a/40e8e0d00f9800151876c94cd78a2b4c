@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body bgcolor="black">
+	<h:form>
+		<table border="2px solid gray" style="margin: 100px 0px 0px 200px">
+			<tr>
+
+				<td>Employee ID</td>
+				<td>Employee Name</td>
+				<td>Employee Contact</td>
+				<td>Employee Address</td>
+				<td colspan="2">Action</td>
+			</tr>
+			<ui:repeat var="employee" value="#{employeeBean.employees}">
+				<tr>
+					<td>#{employee.employeeId}</td>
+					<td>#{employee.employeeName}</td>
+					<td>#{employee.employeeContact}</td>
+					<td>#{employee.employeeAddress}</td>
+					<td><h:commandButton value="Delete"
+							action="#{employeeBean.deleteEmployee}">
+							<f:setPropertyActionListener value="#{employee.employeeId}"
+								target="#{employeeBean.receievedEmployeeId}"></f:setPropertyActionListener>
+						</h:commandButton></td>
+					<td><h:commandButton value="Update" action="#{employeeBean.updateEmployee}">
+							<f:setPropertyActionListener value="#{employee.employeeId}"
+								target="#{employeeBean.receievedEmployeeId}"></f:setPropertyActionListener>
+						</h:commandButton></td>
+				</tr>
+			</ui:repeat>
+			<tr>
+				<td><h:outputLink value="index.xhtml">Add Employee</h:outputLink>
+				</td>
+			</tr>
+		</table>
+	</h:form>
+</h:body>
+</html>

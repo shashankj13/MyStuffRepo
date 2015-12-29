@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/template/facelet.xhtml">
+
+	<ui:define name="content">
+		<div style="margin-left: 10px; float: left;">
+
+			<ui:include src="sidebar.xhtml" />
+
+		</div>
+
+		<div style="margin-left: 250px; margin-right: 150px">
+			<div id="dashboarddiv" style="float: left; margin-right: 150px;">
+
+
+				<div id="tabs">
+					<ul>
+						<li><a href="#heading">HEADING</a></li>
+						<li><a href="#subheading">SUBHEADING</a></li>
+					</ul>
+
+					<div id="heading"
+						style="height: 200px; width: 700px; border: 1px solid">
+						<div id="addHeadings">
+							<h:form prependId="false">
+								<table>
+									<tr>
+										<td>Course Title:</td>
+										<td><h:selectOneMenu value="#{headingBean.course_id}" >
+										<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+											<f:selectItems value="#{courseBean.courseList}" var="course" itemLabel="#{course.course_title}" itemValue="#{course.course_id}" />
+											
+										</h:selectOneMenu></td>
+									</tr>
+
+									<tr>
+										<td>Heading:</td>
+										<td><h:inputText value="#{headingBean.heading_title}"/></td>
+									</tr>
+
+									<tr>
+										<td><h:commandButton value="Save" action="#{headingBean.storeHeading(1)}"></h:commandButton></td>
+										<td><h:commandButton value="Save and Add More" action="#{headingBean.storeHeading(2)}"></h:commandButton></td>
+										<td><h:button value="Cancel" outcome="createcourses"></h:button></td>
+									</tr>
+								</table>
+							</h:form>
+						</div>
+					</div>
+					<div id="subheading" style="height: 200px; width: 700px;">
+						
+						<h:form prependId="false">
+							<table>
+								<tr>
+										<td>Course Title:</td>
+										<td>
+											<h:selectOneMenu value="#{subheadingBean.course_id}" valueChangeListener="#{headingBean.getHeadings}" onchange="submit()">
+                                        		<f:selectItem  itemLabel="------------select-----------" itemValue="-1"/>
+                                        		<f:selectItems value="#{courseBean.courseList}" var="course" itemLabel="#{course.course_title}" itemValue="#{course.course_id}" />
+                                    		</h:selectOneMenu>
+                                    	</td>
+									</tr>
+
+								<tr>
+									<td>Heading Title:</td>
+									<td><h:selectOneMenu value="#{subheadingBean.heading_id}">
+										<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+											<f:selectItems value="#{headingBean.detailedCourseHeadingList}" var="heading1" itemLabel="#{heading1.title}" itemValue="#{heading1.heading}"/>
+											
+										</h:selectOneMenu></td>
+								</tr>
+
+								<tr>
+									<td>Sub Heading:</td>
+									<td><h:inputText value="#{subheadingBean.subheading}"/></td>
+								</tr>
+								
+								<tr>
+									<td>Sub Heading Status:</td>
+									<td><h:selectOneMenu value="#{subheadingBean.subheading_status}">
+										<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+										<f:selectItem itemLabel="Not Started" itemValue="Not Started"/>
+										<f:selectItem itemLabel="Pending" itemValue="Pending"/>
+										<f:selectItem itemLabel="Completed" itemValue="Completed"/>
+											<f:ajax/>
+										</h:selectOneMenu></td>
+								</tr>
+								
+								<tr>
+									<td><h:commandButton value="Save" action="#{subheadingBean.storeSubheading(1)}"></h:commandButton></td>
+									<td><h:commandButton value="Save and Add More" action="#{subheadingBean.storeSubheading(2)}"></h:commandButton></td>
+									<td><h:button value="Cancel" outcome="createcourses"></h:button></td>
+								</tr>
+							</table>
+						</h:form>
+					</div>
+				</div>
+				</div>
+		</div>
+	</ui:define>
+
+</ui:composition>
+</html>

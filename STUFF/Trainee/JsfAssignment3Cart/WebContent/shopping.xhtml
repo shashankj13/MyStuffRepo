@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<link href="styling.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery-ui.css"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#men").click(function() {				
+				$("#menChild").wait();
+				$("#menChild").toggle();
+				$("#womenChild").hide();
+				$("#childChild").hide();
+			});
+			$("#women").click(function() {
+				$("#womenChild").toggle();
+				$("#childChild").hide();
+				$("#menChild").hide();
+			});
+			$("#child").click(function() {
+				$("#childChild").toggle();
+				$("#menChild").hide();
+				$("#womenChild").hide();
+			});
+		});
+		
+		
+		$(document).ready(function(){
+		$('.display').click(function() {
+		var id=$(this).closest('table').attr('id');
+		var cell1= document.getElementById(id).rows[1].cells[1].innerHTML;
+		var cell2= document.getElementById(id).rows[2].cells[1].innerHTML;
+		
+		 var ht1 = document.getElementById("htb1");
+		ht1.value=cell1;
+		var ht2 = document.getElementById("htb2");
+		ht2.value=cell2; 
+		
+		$('#dialog').dialog({
+		 
+		height:400,
+		width:600
+		});
+		 
+		});
+		 
+		 
+		});
+
+
+	</script>
+</h:head>
+<h:body>
+
+
+	<div id="container">
+
+		<!-- <div id="cartdiv" style="color: white;">
+			<span id="spanid"> CART : </span>
+		</div> -->
+
+		<div id="heading">
+
+			<div id="divid">
+				Welcome
+				<h:outputFormat style="color:white" value="#{customerBean.name}" />
+			</div>
+
+			<h:form>
+				<div id="logoutdiv">
+					<h:commandButton value="LogOut"
+						action="#{customerBean.logoutCustomer}" />
+				</div>
+			</h:form>
+		</div>
+
+
+
+		<div id="bodydiv">
+			<div id="leftbodydiv">
+				
+				<div id="men">
+					<h:link value="men" id="men" />
+				</div>
+				<div id="women">
+					<h:link value="women" id="women" />
+				</div>
+				<div id="child">
+					<h:link value="child" id="child" />
+				</div>
+				
+			</div>
+
+			<div id="rightbodydiv">
+				<div id="menChild" style="display: none;">
+					<div id="inner1">
+						<h:form prependId="false">
+							<table id="table1">
+								<tr>
+									<td><img src="images/m4.jpg" alt="NO " height="90px"
+										width="90px" /></td>
+									<td>DESC</td>
+								</tr>
+								<tr>
+									<td>Product Name :</td>
+									<td>Shirt1
+									
+									</td>
+								</tr>
+								<tr>
+									<td>Price :</td>
+									<td>2000</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="2"><h:commandButton
+											type="button" value="Add To Cart"
+											class="display" /></td>
+
+								</tr>
+							</table>
+						</h:form>
+					</div>
+					<div id="inner2">
+						<table id="table2">
+							<tr>
+								<td><img src="images/m1.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Shirt2
+								</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart"
+										class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner3">
+						<table id="table3">
+							<tr>
+								<td><img src="images/m2.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Shirt3</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>3000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+
+					<div id="inner4">
+						<table id="table4">
+							<tr>
+								<td><img src="images/m3.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Shirt4</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>5000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+				</div>
+
+
+
+				<div id="womenChild" style="display: none">
+					<div id="inner1">
+						<table id="table5">
+							<tr>
+								<td><img src="images/w1.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>WomenDress1</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner2">
+						<table id="table=6">
+							<tr>
+								<td><img src="images/w2.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>WomenDress2</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>4000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display"/></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner3">
+						<table id="table7">
+							<tr>
+								<td><img src="images/w3.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>WomenDress3</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>6000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+
+					<div id="inner4">
+						<table id="table8">
+							<tr>
+								<td><img src="images/w4.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>WomenDress4</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+				</div>
+
+
+				<div id="childChild" style="display: none">
+					<div id="inner1">
+						<table id="table9">
+							<tr>
+								<td><img src="images/c1.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Child1</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>3000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner2">
+						<table id="table10">
+							<tr>
+								<td><img src="images/c2.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Child2</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>4000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner3">
+						<table id="table11">
+							<tr>
+								<td><img src="images/c3.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Child3</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>9000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+					<div id="inner4">
+						<table id="table12">
+							<tr>
+								<td><img src="images/c4.jpg" alt="NO " height="90px"
+									width="90px" /></td>
+								<td>DESC</td>
+							</tr>
+							<tr>
+								<td>Product Name :</td>
+								<td>Child4</td>
+							</tr>
+							<tr>
+								<td>Price :</td>
+								<td>1000</td>
+							</tr>
+							<tr>
+								<td align="center" colspan="2"><h:commandButton
+										type="button" value="Add To Cart" class="display" /></td>
+
+							</tr>
+						</table>
+					</div>
+				</div>
+
+
+
+			</div>
+			 <div id="slipx">
+			 	<h:form>
+			 		<h:commandButton  type="submit" value="PROCEED AND PAY" id="slippay" action="#{cartBean.proceed}"/>
+			 	</h:form>
+				
+			</div>
+
+		</div>
+
+
+		
+
+	</div>
+	<div id="dialog" style="display: none;">
+			<h:form>
+				<table>
+					<tr>
+						<td>Product Name : </td>
+						  <td>
+						<input type="text" id="htb1" readonly="readonly" name="abc"/> 
+						   
+						</td>
+					</tr>
+					<tr>
+						<td>Product Price : </td>
+					
+						
+				<td>
+					 <input type="text" id="htb2" readonly="readonly" name="xyz"/> 
+						</td>
+					</tr>
+					<tr>	
+						<td>Quantity</td>
+						<td><h:inputText value="#{cartBean.quantity}"/></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><h:commandButton type="submit"
+								value="XYZ" action="#{cartBean.saveCart}"/></td>
+								
+					</tr>
+				</table>
+
+			</h:form>
+
+		</div>
+</h:body>
+</html>

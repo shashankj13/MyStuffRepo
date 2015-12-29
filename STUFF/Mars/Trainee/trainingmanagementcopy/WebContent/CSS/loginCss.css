@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+
+
+#login ,#register{
+	-moz-box-shadow:inset 0px -13px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px -13px 0px 0px #ffffff;
+	box-shadow:inset 0px -13px 0px 0px #ffffff;
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:9px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+#login:hover ,#register:hover{
+	background-color:#e9e9e9;
+}
+#login:active ,#register:active{
+	position:relative;
+	top:1px;
+}
+
+
+
+
+#wrapper{
+	color: blue;
+	
+}
+
+
+body{
+	background-repeat: repeat-x;
+	
+	
+}
+
+#loginForm{
+	
+	height:100px;
+	width:600px;
+	background:transparent;
+	color: white;
+	
+}
+
+.box{
+	background:#C0C0C0;
+}
+
+.red{
+	background:red;
+	color:white;
+}
+.orange{
+	background:orange;
+	color:white;
+}
+.green{
+	background:green;
+	color:white;
+}
+
+#show{
+	margin-top:150px;
+}
+
+#dialog{
+	background-color: black;
+	color: white;
+}

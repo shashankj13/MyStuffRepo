@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/template/facelet.xhtml">
+
+	<ui:define name="content">
+
+		<div style="margin-left: 10px; float: left;">
+
+			<ui:include src="sidebar.xhtml" />
+
+		</div>
+		<div id="main" style="float: left; margin-left: 110px">
+			<h:form prependId="false">
+				<table>
+					<tr>
+
+						<td colspan="2" align="center" style="text-align: center;">
+							<div style="border: 1px solid black ; background-color: transparent ; color: black; height: 30px ;padding-top: 15px" >CREATE NEW COURSE</div>
+						</td>
+
+
+					</tr>
+					<tr>
+
+						<td>COURSE TITLE</td>
+						<td><h:inputText id="course" value="#{courseBean.title}" size="50" /></td>
+
+					</tr>
+
+					<tr>
+
+						<td>DESCRIPTION</td>
+						<td><h:inputTextarea rows="6" cols="38"
+								value="#{courseBean.desc}" /></td>
+
+					</tr>
+
+					<tr>
+
+						<td>REFERENCE CODE</td>
+						<td><h:inputText id="ref" value="#{courseBean.ref}"  size="50" /></td>
+
+					</tr>
+
+					<tr>
+
+						<td>ACTIVE</td>
+						<td><h:selectBooleanCheckbox id="statusid"
+								value="#{courseBean.status}">
+							</h:selectBooleanCheckbox></td>
+
+					</tr>
+
+					<tr>
+
+						<td>COURESE IMAGE (OPTIONAL)</td>
+						<td> <h:outputText value="#{param['msg']}"></h:outputText></td>
+
+					</tr>
+					<tr>
+
+						<td colspan="2"><hr /></td>
+						<td></td>
+
+					</tr>
+
+					<tr>
+
+						<td><h:commandButton class="btn-save-createcourse" value="SAVE"
+								action="#{courseBean.saveCourse}" /></td>
+						<td><h:link outcome="welcome.xhtml" class="link-cancel-createcourse">CANCEL</h:link></td>
+
+					</tr>
+
+					<tr>
+						<td colspan="2"><hr /></td>
+
+					</tr>
+					<tr>
+						<td></td>
+						<td>			
+							<h:button outcome="heading.xhtml" value="Fill Course Details" class="btn-fillcourse-createcourse"></h:button>
+						</td>
+					</tr>
+
+				</table>
+			</h:form>
+
+		</div>
+
+		<div style="margin-left: 300px; float: left; border: 2px solid ; height: 150px ; width: 300px ; margin-top: 10px">
+			
+			<div style="height: 30px ; width: 300px ; background-color: teal;" > <img src="http://www.cliparthut.com/clip-arts/52/alert-clip-art-52548.png" height="20px" width="20px"/> <b>Notification</b> </div>
+			<div style="background-color: white; font-family: monospace; height: 117px"><i> By default this course will be added as active. Later you can edit the course if required. </i></div>
+		</div>
+	</ui:define>
+
+</ui:composition>
+</html>

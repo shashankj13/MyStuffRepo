@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="addCss.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+	$(document)
+			.ready(
+					function() {
+						$('#tbox')
+								.click(
+										function() {
+											var title = prompt("Please Enter Your Title");
+											var type = prompt("Please Enter Your Field");
+											if (title != null & type != null) {
+												$('#add')
+														.append(
+																"<tr><td>"
+																		+ title
+																		+ "</td><td><input type='"
+																		+ type
+																		+ "' name='"
+																		+ title
+																				.concat(type)
+																		+ "' ></td><td><input type='button' class='rbox' value='-'/></td></tr>");
+											}
+										});
+
+						$(document).on('click', '.rbox', function() {
+							$(this).closest('tr').remove();
+
+						});
+
+					});
+</script>
+</head>
+<body>
+
+	<div id="header">
+		<h1><a href="home" class="a">Home</a> <a href="home" class="a">About
+					Us</a> <a href="home" class="a">Services</a> <a href="home" class="a">Contact
+					Us</a></h1>
+	</div>
+
+	<div id="leftbody">
+		<ul>
+				<li>ROW NUMBER 900</li>
+				<li>ROW NUMBER 800</li>
+				<li>ROW NUMBER 600</li>
+				<li>ROW NUMBER 540</li>
+				<li>ROW NUMBER 500</li>
+				<li>ROW NUMBER 100</li>
+				<li>ROW NUMBER 900</li>
+				<li>ROW NUMBER 800</li>
+				<li>ROW NUMBER 600</li>
+				<li>ROW NUMBER 540</li>
+				<li>ROW NUMBER 500</li>
+				<li>ROW NUMBER 100</li>
+			</ul>
+	</div>
+
+	<div id="rightbody">
+		
+			<form action="ShowServlet" method="get">
+				<table border="1">
+					<tr>
+					<td>
+						<input type="button" id="tbox" value="Add Field">
+						</td>
+					</tr>
+					<tr id="add">
+						
+					</tr>
+					
+					<tr>
+					<td>
+						<input type="submit" id="sbox" value="Submit" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		
+	</div>
+	<div id="footer"><a href="home" class="a">Home</a> <a href="home" class="a">About
+					Us</a> <a href="home" class="a">Services</a> <a href="home" class="a">Contact
+					Us</a></div>
+
+</body>
+</html>

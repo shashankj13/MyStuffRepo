@@ -1,0 +1,16 @@
+package com.yash.restproj.rest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+@Path("/RestClass")
+public class RestClass {
+	
+	@GET
+	@Path("/users")
+	@Produces(MediaType.TEXT_PLAIN)
+	
+
+}

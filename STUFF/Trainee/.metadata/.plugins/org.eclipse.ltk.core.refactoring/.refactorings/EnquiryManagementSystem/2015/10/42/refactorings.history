@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ConnectionProvider.java&apos; to &apos;AjaxProject1/src/com.yash.ajax.util&apos;&#x0D;&#x0A;- Original project: &apos;EnquiryManagementSystem&apos;&#x0D;&#x0A;- Destination element: &apos;AjaxProject1/src/com.yash.ajax.util&apos;&#x0D;&#x0A;- Original element: &apos;com.yash.ems.util.ConnectionProvider.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=AjaxProject1/src&lt;com.yash.ajax.util" element1="/src&lt;com.yash.ems.util{ConnectionProvider.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1444888030976" units="1" version="1.0"/>
+</session>

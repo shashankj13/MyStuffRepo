@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery-ui.css"></script>
+	<script type="text/javascript">
+		$( "h:selectOneRadio" ).on( "click", function() {
+ 		 $( "#log" ).html( $( "h:selectOneRadio:checked" ).val() + " is checked!" );
+		});
+	</script>
+</h:head>
+<h:body>
+
+	
+  <div id="log"></div>
+  
+	<h:form prependId="false">
+		<table align="center">
+
+			<tr>
+				<td colspan='4' align="center" style="color: blue"><span
+					id="showInfo"> USER LOGIN PAGE </span></td>
+			</tr>
+
+			<tr>
+				<td style="color: orange;" colspan="4">What is Your Email ?</td>
+			
+				
+				<td><h:inputText id="userName" required="true"
+						value="#{customerBean.username}">
+					</h:inputText></td>
+				<td><h:message for="userName" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td style="color: orange;" colspan="4"> Your Password ?</td>
+			
+
+
+				<td><h:inputSecret id="password" required="true"
+						value="#{customerBean.password}" /></td>
+				<td><h:message for="password" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td align="center"><h:commandButton type="submit"
+						id="login" action="#{customerBean.authenticateCustomer}" value="Login" /></td>
+						<td align="center"><h:button id="register" value="Register" outcome="customerregister.xhtml"/></td>
+						<td align="center"><h:button id="back" value="GO BACK" outcome="index.xhtml"/></td>
+
+			</tr>
+
+		</table>
+	</h:form>
+
+</h:body>
+</html>

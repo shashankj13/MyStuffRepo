@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h = "http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div id="log"></div>
+
+	<h:form prependId="false">
+		<table align="center">
+
+			<tr>
+				<td colspan='4' align="center" style="color: blue"><span
+					id="showInfo"> ADMIN LOGIN PAGE </span></td>
+			</tr>
+
+			<tr>
+				<td style="color: orange;" colspan="4">What is Your Email ?</td>
+
+
+				<td><h:inputText id="userName" required="true"
+						value="#{adminBean.username}">
+					</h:inputText></td>
+				<td><h:message for="userName" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td style="color: orange;" colspan="4">Your Password ?</td>
+
+
+
+				<td><h:inputSecret id="password" required="true"
+						value="#{adminBean.password}" /></td>
+				<td><h:message for="password" style="color:red" /></td>
+			</tr>
+
+			<tr>
+				<td align="center"><h:commandButton type="submit" id="login"
+						action="#{adminBean.authenticateAdmin}" value="Login" /></td>
+				<td align="center"><h:button id="back" value="GO BACK"
+						outcome="index.xhtml" /></td>
+
+			</tr>
+
+		</table>
+	</h:form>
+</body>
+</html>

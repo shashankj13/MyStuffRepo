@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+
+#header ,#footer{
+	background: black;
+	height: 60px;
+	text-align: center;
+	font-size: 35px;
+}
+
+#description {
+	background: lightblue;
+	
+	
+}
+#mainbodydiv{
+	height: 500px;
+	width:800px;
+}
+
+#bodydiv {
+	background: lightblue;
+	color: green;
+	height: 400px;
+	width: 600px;
+	
+}
+
+body {
+	
+	background-color: lightblue;
+	
+}
+
+.trdiv{
+		
+}
+
+#form {
+	position:relative;
+	margin-top: 10%;
+	background-color: #B0B0B0;
+	border: 1px black solid;
+	opacity: 0.8;
+}
+
+#click {
+	margin-left: 43%;
+}

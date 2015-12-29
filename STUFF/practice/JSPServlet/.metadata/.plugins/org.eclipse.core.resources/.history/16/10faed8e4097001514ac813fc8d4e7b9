@@ -1,0 +1,5 @@
+package com.yash.jspservlet.util;
+
+public class DBUtil {
+
+}

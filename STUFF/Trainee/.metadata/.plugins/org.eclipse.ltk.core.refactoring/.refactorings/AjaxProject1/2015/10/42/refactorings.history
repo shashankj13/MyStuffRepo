@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ControllerServlet.java&apos; to &apos;EnquiryManagementSystem/src/com.yash.ems.util&apos;&#x0D;&#x0A;- Original project: &apos;AjaxProject1&apos;&#x0D;&#x0A;- Destination element: &apos;EnquiryManagementSystem/src/com.yash.ems.util&apos;&#x0D;&#x0A;- Original element: &apos;com.yash.ajax.servlet.ControllerServlet.java&apos;" description="Copy compilation unit" destination="=EnquiryManagementSystem/src&lt;com.yash.ems.util" element1="/src&lt;com.yash.ajax.servlet{ControllerServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1444888038452" units="1" version="1.0"/>
+</session>

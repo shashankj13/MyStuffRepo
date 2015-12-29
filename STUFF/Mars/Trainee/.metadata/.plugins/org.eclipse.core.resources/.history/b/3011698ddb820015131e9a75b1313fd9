@@ -1,0 +1,13 @@
+package com.yash.dp.stateful;
+
+import javax.ejb.Local;
+
+@Local
+public interface StatefulSessionBeanLocal {
+	
+	public void setEmpid();
+	public void setName();
+	public void finish();
+	
+
+}

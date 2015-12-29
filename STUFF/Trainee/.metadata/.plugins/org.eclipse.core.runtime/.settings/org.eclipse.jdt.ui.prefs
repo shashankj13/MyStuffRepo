@@ -1,0 +1,22 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="shashank.program.extrastuff.KeyValueArray"><rhs name\="shashank.program.extrastuff.KeyValueArray"/></lhs><lhs name\="shashank.program.annotations.TestAnnotation"><rhs name\="shashank.program.annotations.TestAnnotation"/></lhs><lhs name\="java.lang.Enum"><rhs name\="java.lang.annotation.RetentionPolicy"/><rhs name\="java.lang.annotation.ElementType"/></lhs><lhs name\="shashank.program.PLM.MyLibrary"><rhs name\="shashank.program.PLM.MyLibrary"/></lhs><lhs name\="shashank.program.Thread.ArrayThread"><rhs name\="shashank.program.Thread.ArrayThread"/></lhs><lhs name\="shashank.program.Thread.MyStack"><rhs name\="shashank.program.Thread.MyStack"/></lhs><lhs name\="shashank.program.db.dao.CustomerDao"><rhs name\="shashank.program.db.dao.CustomerDao"/></lhs><lhs name\="shashank.program.db.domain.Customer"><rhs name\="shashank.program.db.domain.Customer"/></lhs><lhs name\="com.org.domain.Customer"><rhs name\="com.org.domain.Customer"/></lhs><lhs name\="com.org.domain.Account"><rhs name\="com.org.domain.Account"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="java.lang.InterruptedException"><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="com.program.extrastuff.DriverImplementation"><rhs name\="com.program.extrastuff.MySQL"/></lhs><lhs name\="com.yash.itservicedesk.pojo.EmpDetails"><rhs name\="com.yash.itservicedesk.pojo.EmpDetails"/></lhs><lhs name\="javax.servlet.jsp.tagext.TagSupport"><rhs name\="com.yash.customtag.TagLibClass"/></lhs><lhs name\="javax.servlet.jsp.tagext.IterationTag"><rhs name\="com.yash.customtag.TagLibClass"/></lhs><lhs name\="javax.servlet.jsp.tagext.Tag"><rhs name\="com.yash.customtag.TagLibClass"/></lhs><lhs name\="javax.servlet.jsp.tagext.JspTag"><rhs name\="com.yash.customtag.TagLibClass"/></lhs><lhs name\="com.yash.customtag.TagLibClass"><rhs name\="com.yash.customtag.TagLibClass"/></lhs><lhs name\="java.io.Writer"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="java.io.PrintWriter"><rhs name\="java.io.PrintWriter"/></lhs><lhs name\="com.yash.ems.domain.Enquiry"><rhs name\="com.yash.ems.domain.Enquiry"/></lhs><lhs name\="com.yash.ajax.domain.Employee"><rhs name\="com.yash.ajax.domain.Employee"/></lhs><lhs name\="com.yash.curdcdi.util.DbUtil"><rhs name\="com.yash.curdcdi.util.DbUtilImpl"/></lhs><lhs name\="com.yash.curdcdi.domain.Customer"><rhs name\="com.yash.curdcdi.domain.Customer"/></lhs><lhs name\="com.yash.jsfsample2.UserBean.Address"><rhs name\="com.yash.jsfsample2.UserBean.Address"/></lhs><lhs name\="com.yash.jsfassignment3.bean.CartBean"><rhs name\="com.yash.jsfassignment3.bean.CartBean"/></lhs></history>
+content_assist_number_of_computers=21
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+editor_folding_enabled=false
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,12 @@
+package com.yash.jspservlet.service;
+
+import com.yash.jspservlet.dao.EmployeeDao;
+
+public class EmployeeService {
+	
+	EmployeeDao dao = new EmployeeDao();
+	List<Employee> fetchAllEmployee(){
+		
+	}
+
+}

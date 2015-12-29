@@ -1,0 +1,8 @@
+package com.yash.curdcdi.domain;
+
+public class Candidate {
+
+	private int id;
+	private String name;
+	
+}

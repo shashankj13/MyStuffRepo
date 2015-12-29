@@ -1,0 +1,8 @@
+package com.yash.demo;
+
+public class Threaddemo extends new Runnable() {
+	public void run() {
+		
+	}
+}
+

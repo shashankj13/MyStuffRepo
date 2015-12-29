@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mobiles>
+	<mobile id = "1">
+		<brand>IPHONE</brand>
+		<color> RED </color>
+		<price> 50000 </price>
+	</mobile>
+	
+	<mobile id = "2">
+		<brand>SAMSUNG</brand>
+		<color> Orange </color>
+		<price> 25000 </price>
+	</mobile>
+	
+	<mobile id = "3">
+		<brand>WINDOWS</brand>
+		<color> GREEN </color>
+		<price> 36000 </price>
+	</mobile>
+	
+</mobiles>

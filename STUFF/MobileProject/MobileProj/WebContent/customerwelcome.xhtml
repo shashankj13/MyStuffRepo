@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="jquery-ui.css"></link>
+	<link rel="stylesheet" type="text/css" href="addCss.css"></link>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css" />
+	<script type="text/javascript">
+		$(function() {
+			$("#tabs").tabs();
+		});
+		$(function() {
+			$("#tabsinner").tabs();
+		});
+	</script>
+</h:head>
+<h:body>
+
+	<div id="container">
+
+		<div id="headerdiv" style="color: black;">
+			Welcome
+			<h:outputText style="color: black;"
+				value="#{customerBean.customer.name}"></h:outputText>
+			<h:form>
+				<h:commandButton id="logout" value="Sign Out"
+					action="#{customerBean.logoutCustomer}" />
+			</h:form>
+		</div>
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">ABOUT US </a></li>
+				<li><a href="#tabs-2">MOBILE</a></li>
+				<li><a href="#tabs-3">CONTACT</a></li>
+			</ul>
+
+			<div id="tabs-1">
+				<p>PROJECT MADE BY</p>
+			</div>
+
+			<div id="tabs-2">
+				<div id="tabsinner">
+					<ul>
+						<li><a href="#tabs-2-1">IPHONE </a></li>
+						<li><a href="#tabs-2-2">SAMSUNG</a></li>
+						<li><a href="#tabs-2-3">WINDOWS</a></li>
+					</ul>
+					<h:form prependId="false">
+					
+					
+					<div id="tabs-2-1" style="height: 450px;">
+				
+						<div id="leftsection">
+							
+							<h:outputText id="price" value="#{customerBean.mobileDetails.price}"></h:outputText>
+							<h:outputText id="phonename" value="#{customerBean.mobileDetails.phonename}"></h:outputText>
+							<h:outputText id="color" value="#{customerBean.mobileDetails.color}"></h:outputText>
+						</div>
+						<div id="rightsection">
+
+
+							<!-- <ui:repeat var="item" value="#{customerBean.md1}">
+
+								<div id="tabs-2-1-1">
+								
+								
+								</div>
+
+										<h:commandLink  action="#{customerBean.getmd1Details(item.id)}" value="#{item.id}" >
+											<f:ajax render="price phonename color"></f:ajax>
+										</h:commandLink>
+							</ui:repeat>
+								 -->
+
+						</div>
+					</div></h:form>
+
+					<div id="tabs-2-2" style="height: 450px;">
+						<div id="leftsection"></div>
+
+
+
+						<div id="rightsection">
+
+							<div class="right1">
+								<div id="tabs-2-1-1">
+									<br /> hello
+								</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-2">2</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-3">3</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-4">4</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div id="tabs-2-3" style="height: 450px;">
+						<div id="leftsection"></div>
+
+
+
+						<div id="rightsection">
+
+							<div class="right1">
+								<div id="tabs-2-1-1">
+									<br /> hello
+								</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-2">2</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-3">3</div>
+							</div>
+
+							<div class="right1">
+								<div id="tabs-2-1-4">4</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="tabs-3">
+				<p>TTAB 3</p>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

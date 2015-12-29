@@ -1,0 +1,117 @@
+package com.yash.crudapplication.bean;
+
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.inject.Inject;
+
+import com.yash.crudapplication.domain.Employee;
+import com.yash.crudapplication.service.EmployeeService;
+
+@ManagedBean
+@SessionScoped
+public class EmployeeBean {
+	
+		private int employeeId;
+		private String employeeName;
+		private String employeeContact;
+		private String employeeAddress;
+		private List<Employee> employees;
+		private int receievedEmployeeId;
+
+		public int getReceievedEmployeeId() {
+			return receievedEmployeeId;
+		}
+		public void setReceievedEmployeeId(int receievedEmployeeId) {
+			this.receievedEmployeeId = receievedEmployeeId;
+		}
+		public List<Employee> getEmployees() {
+			employees= employeeService.getAllDetails();
+			return employees;
+		}
+		public void setEmployees(List<Employee> employees) {
+			this.employees = employees;
+		}
+		public int getEmployeeId() {
+			return employeeId;
+		}
+		public void setEmployeeId(int employeeId) {
+			this.employeeId = employeeId;
+		}
+		public String getEmployeeName() {
+			return employeeName;
+		}
+		public void setEmployeeName(String employeeName) {
+			this.employeeName = employeeName;
+		}
+		public String getEmployeeContact() {
+			return employeeContact;
+		}
+		public void setEmployeeContact(String employeeContact) {
+			this.employeeContact = employeeContact;
+		}
+		public String getEmployeeAddress() {
+			return employeeAddress;
+		}
+		public void setEmployeeAddress(String employeeAddress) {
+			this.employeeAddress = employeeAddress;
+		}
+		
+		@Inject
+		Employee employee;
+		
+		
+		
+		public Employee getEmployee() {
+			return employee;
+		}
+		public void setEmployee(Employee employee) {
+			this.employee = employee;
+		}
+
+		@EJB
+		EmployeeService employeeService;
+		
+		public String saveEmployee(){
+			
+			employee.setEmployeeName(employeeName);
+			employee.setEmployeeContact(employeeContact);
+			employee.setEmployeeAddress(employeeAddress);
+			employeeService.addEmployee(employee);
+			
+			return "details";
+	
+		}
+		
+		public String deleteEmployee(){
+			employeeService.deleteEmployee(receievedEmployeeId);
+			return "details.xhtml?faces-redirect=true";
+			
+			
+		}
+		
+		public String updateEmployee(){
+			employee = employeeService.getEmployeeDetails(receievedEmployeeId);
+			setEmployeeId(employee.getEmployeeId());
+			setEmployeeAddress(employee.getEmployeeAddress());
+			setEmployeeName(employee.getEmployeeName());
+			setEmployeeContact(employee.getEmployeeContact());
+			return "update";
+			
+			
+		}
+		
+		public String saveUpdateEmployee(){
+			employee.setEmployeeId(employeeId);
+			employee.setEmployeeName(employeeName);
+			employee.setEmployeeContact(employeeContact);
+			employee.setEmployeeAddress(employeeAddress);
+			employeeService.updateEmployeeDetails(employee);
+			return "details.xhtml";
+			
+		}
+
+}

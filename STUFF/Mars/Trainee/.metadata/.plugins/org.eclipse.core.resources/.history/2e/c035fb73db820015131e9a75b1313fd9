@@ -1,0 +1,10 @@
+package com.yash.dp.stateful;
+
+import javax.ejb.Local;
+
+@Local
+public interface StatefulSessionBeanLocal {
+	
+	
+
+}

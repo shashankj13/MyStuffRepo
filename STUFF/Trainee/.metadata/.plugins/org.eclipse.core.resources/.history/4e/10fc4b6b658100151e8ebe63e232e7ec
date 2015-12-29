@@ -1,0 +1,28 @@
+package com.yash.curdcdi.domain;
+
+public class CandidatePersonalInfo extends Candidate {
+	
+	private Candidate candidate;
+	private String city;
+	private int contact;
+	
+	public Candidate getCandidate() {
+		return candidate;
+	}
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public int getContact() {
+		return contact;
+	}
+	public void setContact(int contact) {
+		this.contact = contact;
+	}
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+
+		 <table>
+
+			<tr>
+
+				<td>Select Your Skill</td>
+				<td><h:selectOneMenu value="#{beanClass.skillValue}">
+						<f:selectItem itemLabel="bablu" itemValue="noskill"></f:selectItem>
+						<f:selectItems value="#{beanClass.skillList}"></f:selectItems>
+						
+					</h:selectOneMenu></td>
+				<td>Select Your Efficiency</td>
+				<td><h:selectOneMenu value="#{beanClass.skillEfficiencyValue}">
+						<f:selectItem itemLabel="------------" itemValue="noefficiency"></f:selectItem>
+						<f:selectItems value="#{beanClass.skillEfficiencyList}"></f:selectItems>
+						
+					</h:selectOneMenu></td>
+				<td><h:commandButton value="SAVE" action="#{beanClass.addSkillAndEfficiency}">
+				</h:commandButton></td>
+
+			</tr>
+
+		</table>
+	</h:form>
+
+</h:body>
+</html>

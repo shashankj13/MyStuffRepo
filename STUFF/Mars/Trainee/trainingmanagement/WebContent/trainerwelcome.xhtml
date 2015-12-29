@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/template/facelet.xhtml">
+	
+	<ui:define name="content">
+	<div style="background-color: blue ; height: 300px ; background-color: blanchedalmond ;border: 2px solid" >
+	<h:form prependId="false">
+		<table class="abcd" style="margin-left: 350px">
+				<tr > <td> REFERENCE </td> <td> TITLE </td> <td> ACTION </td> </tr>
+				<ui:repeat value="#{courseBean.courseActiveList}" var="clist">
+			<tr>
+					<td width="200px"> #{clist.reference}</td> 
+					<td width="200px"> #{clist.course_title}</td>
+					<td width="200px"> <h:commandButton value="DETAIL" action="#{courseBean.showDetailedCourse2}"> 
+						<f:setPropertyActionListener target="#{courseBean.selectedCourse_id}" value="#{clist.course_id}"></f:setPropertyActionListener>
+					</h:commandButton> </td>
+					
+			</tr>
+					 <tr><td colspan="3"><hr/></td></tr>
+				</ui:repeat>
+		</table>
+	</h:form>
+	</div>
+	</ui:define>
+</ui:composition>
+</html>

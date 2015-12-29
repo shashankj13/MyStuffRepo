@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	
+		<h:form prependId="false">
+		<table>
+		<tr>
+			<td>Name:</td>
+			<td><h:inputText id="name" value="#{personBean.name}"
+				converterMessage="ONLY CHARACTERS" validatorMessage="Atleast 2 Character" required="true"
+				requiredMessage="Please Enter Name">
+				<f:validateLength minimum="2"/>
+			</h:inputText></td>
+			<td><h:message for="name" style="color:red;"/></td>
+		</tr>
+		<tr>
+		<td>Salary:</td>
+		<td><h:inputText id="salary" value="#{personBean.salary}"
+				validatorMessage="Not In Range(2000-50000)" required="true" requiredMessage="Please Enter Sal"
+				converterMessage="Enter Only Numbers">
+				<f:validateLongRange maximum="50000" minimum="2000" />
+				<f:convertNumber integerOnly="true"/>
+			</h:inputText></td>
+		<td> <h:message style="color:red;"/> </td>
+		</tr>
+		
+		<tr>
+		<td> Date Of Joining: </td>
+		<td> <h:inputText id="doj" value="#{personBean.doj}"
+				converterMessage="Not Correct Format" required="true" requiredMessage="Please Enter DOJ"
+				validatorMessage="Validator message">
+				<f:convertDateTime pattern="dd/MM/yyyy" />
+			</h:inputText> </td>
+		<td> <h:message for="doj" style="color:red;"/> </td>
+		</tr>
+		
+		<tr>
+		<td> Product: </td>
+		<td> <h:inputText id="product" value="#{personBean.product}"
+				validatorMessage="It Should End With t" required="true" requiredMessage="Please Enter Product">
+				<f:validateRegex pattern=".*t"></f:validateRegex>
+
+			</h:inputText> </td>
+		<td> <h:message for="product" style="color:red;"/> </td>
+		</tr>
+	
+
+			<tr><td><h:commandButton id="button" type="submit" value="ADD"></h:commandButton></td></tr>
+	</table>
+</h:form>
+
+<table>
+	<tr><td> <h:outputText value="#{personBean.name}"></h:outputText> </td></tr>
+	<tr><td> <h:outputText value="#{personBean.doj}">
+	<f:convertDateTime type="date" dateStyle="short"></f:convertDateTime>
+	</h:outputText> </td></tr>
+	<tr><td> <h:outputText value="#{personBean.salary}"></h:outputText> </td></tr>
+	<tr><td> <h:outputText value="#{personBean.product}"></h:outputText> </td></tr>
+</table>
+
+</h:body>
+</html>

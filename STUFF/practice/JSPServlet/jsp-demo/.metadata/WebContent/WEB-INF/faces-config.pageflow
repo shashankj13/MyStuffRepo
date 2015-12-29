@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14489558481710" configfile="/CRUDApplicationJSF/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="247" y="88" id="pf14489558912561" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14489558912562" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="details.xhtml" x="507" y="153" id="pf14489558912573" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf14489605553954" inlinks="pf14489558912562" path="/details.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="update.xhtml" x="385" y="274" id="pf14489605553955" inlinks="pf14489605553954" path="/update.xhtml"/>
+  <links id="pf14489558912562" target="pf14489558912573" source="pf14489558912561" outcome="details" redirect="true"/>
+  <links id="pf14489605553954" target="pf14489605553955" source="pf14489558912573" outcome="update"/>
+</pageflow:Pageflow>

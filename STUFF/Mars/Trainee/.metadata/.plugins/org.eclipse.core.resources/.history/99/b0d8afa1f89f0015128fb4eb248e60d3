@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+
+	<h:form prependId="false">
+
+		<table border="1px solid">
+
+			<tr>
+				<td>Enter Name :</td>
+				<td><h:inputText size="20" p:placeholder="First">
+					</h:inputText></td>
+				<td><h:inputText size="20" p:placeholder="Last"></h:inputText>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Enter Email :</td>
+				<td colspan="2" align="center"><h:inputText size="30" p:placeholder="Eg:xyz@yash.com"></h:inputText>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Enter Yash_Emp Id :</td>
+				<td><h:inputText size="30" p:placeholder="100XXXX"></h:inputText>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Enter Address :</td>
+				<td><h:inputTextarea rows="5" cols="18"
+						p:placeholder="Enter Your Address"></h:inputTextarea></td>
+			</tr>
+			<tr>
+				<td>Enter State :</td>
+				<td><h:inputText size="30" p:placeholder="State"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td>Enter City :</td>
+				<td><h:inputText size="30" p:placeholder="City"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td>Enter Mobile No. :</td>
+				<td><h:inputText size="30" p:placeholder="XXX9878XXX"></h:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td>Enter Alternate No. :</td>
+				<td><h:inputText size="30" p:placeholder="XXX1111XXX"></h:inputText>
+				</td>
+			</tr>
+			
+			<tr>
+			<td colspan="3" align="center">
+			
+				<h:commandButton value="SAVE"></h:commandButton>
+			
+			</td>
+			</tr>
+		</table>
+
+	</h:form>
+
+</h:body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>User Entry form</title>
+	<style type="text/css">
+#welcomeMsg {
+	display: none;
+}
+</style>
+</h:head>
+<h:body>
+	<h:form prependId="false">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><h:inputText id="name" value="#{userBean.name}" /></td>
+			</tr>
+			<tr>
+				<td>Salary</td>
+				<td><h:inputText id="salary" value="#{userBean.salary}" /></td>
+			</tr>
+
+			<tr>
+				<td>email</td>
+				<td><h:inputText id="email" value="#{userBean.email}"
+						required="true" validator="#{userBean.emailValidation}" /> <h:message
+						for="email" /></td>
+			</tr>
+
+			<tr>
+				<td>Password</td>
+				<td><h:inputSecret id="password" value="#{userBean.password}" />
+				</td>
+			</tr>
+
+			<tr>
+				<td>Address</td>
+				<td><h:inputTextarea id="address" cols="50" rows="5"
+						value="#{userBean.address}" /></td>
+			</tr>
+
+			<tr>
+				<td>Technologies</td>
+				<td><h:selectOneMenu value="#{userBean.selectTechologies}">
+						<f:selectItem itemValue="1" itemLabel="Java" />
+						<f:selectItem itemValue="2" itemLabel="Spring" />
+						<f:selectItem itemValue="3" itemLabel="Hibernate" />
+						<f:selectItem itemValue="4" itemLabel="JSF" />
+					</h:selectOneMenu></td>
+			</tr>
+
+			<tr>
+				<td><h:commandButton id="submit" type="submit" value="Save"
+						actionListener="#{userBean.myMethod}" /></td>
+			</tr>
+		</table>
+
+		<h:inputHidden value="hidden value" />
+	</h:form>
+	<h:outputLink value="https://www.google.co.in">Click Google</h:outputLink>
+	<br />
+	<h:selectBooleanCheckbox id="recMail" value="#{userBean.mailMe}">Receive Mail</h:selectBooleanCheckbox>
+	<br />
+	<h:outputFormat id="welcomeMsg" value="{0} is a good {1}">
+		<f:param value="Yash" />
+		<f:param value="Company" />
+	</h:outputFormat>
+	<br />
+	<h:outputText value="Name: " />
+	<h:outputText value="#{userBean.name}" />
+	<br />
+	<h:outputText value="Salary :" />
+	<h:outputText value="#{userBean.salary}" />
+
+	<br />
+	<h:graphicImage url="one.jpg" width="200" height="200" />
+
+</h:body>
+</html>

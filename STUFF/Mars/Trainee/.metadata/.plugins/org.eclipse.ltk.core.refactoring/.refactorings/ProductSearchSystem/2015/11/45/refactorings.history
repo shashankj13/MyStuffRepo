@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Product.java&apos; to &apos;ProductSearchSystem/src/com.yash.productSearchSystem.pojo&apos;&#x0D;&#x0A;- Original project: &apos;ProductSearchSystem&apos;&#x0D;&#x0A;- Destination element: &apos;ProductSearchSystem/src/com.yash.productSearchSystem.pojo&apos;&#x0D;&#x0A;- Original element: &apos;com.yash.productSearchSystem.bean.Product.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.yash.productSearchSystem.pojo" element1="/src&lt;com.yash.productSearchSystem.bean{Product.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1446547395464" units="1" version="1.0"/>
+</session>

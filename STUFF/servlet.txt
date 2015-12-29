@@ -1,0 +1,597 @@
+
+ 
+
+ 
+
+Question 1) Which of the following statements are TRUE about Application deployment descriptor?
+
+ 
+
+A)   It is the standard application.xml file, which is stored in the top level of the META-INF directory of a J2EE application EAR file.
+
+B)   It is an application server-specific XML file that allows you to specify how the application server needs to deploy your Web application.--
+
+C)   You can configure properties specific to the J2EE application server in this deployment descriptor.--
+
+ 
+
+ 
+
+ 
+
+ 
+
+Question 2) Consider the following Statements, which statement(s) is/are TRUE?
+
+ 
+
+ 
+
+A)   HTML is a document display language that lets users link from one document to another.--
+
+B)   HTML does not permits images and other media objects to be embedded directly in an HTML document
+
+C)   HTML can be used to transmit any file that conforms to MIME specification--
+
+D)   HTML is not compatible with HTTP.
+
+E)   To view an HTML document with rich media content, a client side-HTTP GUI interface is used which is known as web browser.--
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Question 3) Consider the following Statements, which of the following are TRUE-
+
+ 
+
+Statement A: A Web-site is a collection of static HTML pages and other media files (.jpeg, .gif, .mov, swf, etc..) which contains all the contents that are visible to the user on a given web server
+
+ 
+
+Statement B: When a web-site includes CGI (Common Gateway Interface) processing, it is called web-application, which permits a user to invoke a program present on the web-server.
+
+ 
+
+Statement C: Web Services are the services offered by one application to another application over World Wide Web, involving transfer of data in XML using SOAP messages in Business-To-Business (B2B) transactions.
+
+ 
+
+ 
+
+A)   Statement A is True, Statements B & C are False
+
+B)   Statement B is True, Statements A & C are False
+
+C)   Statements B & C are True, Statement A is False
+
+D)   All Statements are True---
+
+E)   None of the above
+
+ 
+
+ 
+
+ 
+
+ 
+
+Question 4)  What is the correct canonical form of URL that locates a specific resource on Internet?
+
+ 
+
+A)   protocol://host : port/path/file --
+
+B)   host://protocol : port/path/file
+
+C)   port://host : protocol/path/file
+
+D)   path://protocol:port/path/file
+
+ 
+
+ 
+
+ 
+
+Question 5) What is the default port# for HTTP?
+
+ 
+
+A)   1433
+
+B)   26
+
+C)   80 --
+
+D)   8080
+
+ 
+
+ 
+
+ 
+
+Questions 6) Which of the following statement(s) is/are FALSE
+
+ 
+
+A)   Servlets are platform independent, because they are written in Java.--
+
+B)   Servlets can only be written in Java.
+
+C)   Servlets request processing is faster than traditional CGI processing because each request is run in a separate thread.--
+
+D)   The web-container (in which the Servlets are deployed) provides additional services to the Servlets, such as error-handling and security.
+
+E)   Servlets have access to logging capabilities, which most CGI programs do not have.
+
+F)   Servlets do not have concurrency conflicts.
+
+G)   Mixing presentation and business logic in servlet was a major disadvantage, which led to development of Template page technologies.
+
+ 
+
+ 
+
+ 
+
+Question 7) Which of the following is NOT the feature of SERVLETS?
+
+ 
+
+A)   Highly Scalable
+
+B)   Robust
+
+C)   Object-Oriented
+
+D)   Platform Independent
+
+E)   Efficient
+
+F)   Container Independent--
+
+ 
+
+ 
+
+ 
+
+ 
+
+Question 8) Which of the following is not a template page technology?
+
+ 
+
+A)   Apache’s PHP
+
+B)   Microsoft’s ASP--
+
+C)   Sun Microsystems’s JSP
+
+D)   Sun Microsystems’s Servlets
+
+ 
+
+ 
+
+ 
+
+Question 9) Consider the following Statements, which statement(s) is/are FALSE?
+
+ 
+
+A)   All template page technologies have same fundamental structure: a HTML page is created by web-designer, which embeds special tags created by web-developer, which indicate the code to be executed by web-server at request-time.
+
+B)   JSP pages are opposite of Servlets
+
+C)   Every JSP page is converted into a servlet instance by web-container.
+
+D)   Everything that you can do in a servlet, you can also do in a JSP.
+
+E)   JSP pages do not have concurrency conflicts.
+
+F)   JSP pages are difficult to debug.
+
+ 
+
+ 
+
+Question 10) Identify the method called by the Web container after creating a servlet instance.
+
+ 
+
+A) init()--
+
+B) service()
+
+C) start()
+
+D) destroy()
+
+ 
+
+ 
+
+Question 11) Which method is automatically invoked by the Web container when a request arrives?
+
+ 
+
+A) init()
+
+B) service()--
+
+C) doPost()
+
+D) doGet()
+
+ 
+
+ 
+
+Question 12) Identify the method that sends user information as query string appended to the URL.
+
+ 
+
+A) GET--
+
+B) POST
+
+C) HEAD
+
+D) DELETE
+
+ 
+
+ 
+
+Question 13) Which of the following statements are TRUE about Web component deployment descriptor?
+
+ 
+
+A)   Web component deployment descriptor is a standard web.xml file, which is stored in the WEB-INF directory of a Web component WAR file.
+
+B)   It Contains component specific information, such as, name of servlet, class file of servlet, URL mapping, error pages, initialization parameters, and listeners.
+
+C)   Web component deployment descriptor differs from the Application Server deployment descriptor.
+
+ 
+
+ 
+
+Question 14) Select the correct order of how does a servlet obtains information (context and configuration information) from the deployment descriptor?
+
+ 
+
+1)    The container passes the ServletConfig object to the init() method of the servlet to initialize it.
+
+2)    When a Web application is deployed, the Web container obtains the information from the deployment descriptor and initializes a ServletConfig object and a ServletContext object with it.
+
+3)    The servlet can then obtain information, such as its initialization parameter using the ServletConfig object.
+
+4)    The servlet can then call methods of the ServletContext object to obtain information, such as the context initialization parameters that was specified in the deployment descriptor.
+
+ 
+
+ 
+
+A)   1), 2), 3), 4)
+
+B)   2), 3), 4), 1)
+
+C)   2), 3), 1), 4)
+
+D)   2), 1), 3), 4)--
+
+ 
+
+ 
+
+ 
+
+Question 15) Consider the following Statements, which of the following are TRUE-
+
+ 
+
+          Statement A:  Applets are java programs that are embedded in Web pages.
+
+ 
+
+Statement B:  Servlets require browser to be java-enabled.
+
+ 
+
+A)   Statement A is True, Statements B is False
+
+B)   Statement B is True, Statements A is False
+
+C)   Both Statements A & B are True--
+
+D)   Both Statements A & B are False
+
+ 
+
+ 
+
+ 
+
+Question 16) Which of the following is/are J2EE components?
+
+ 
+
+A)   JSP
+
+B)   Servlets
+
+C)   EJB
+
+D)   All of the above---
+
+ 
+
+ 
+
+Question 17) An application server has?
+
+ 
+
+A)   A web container
+
+B)   An EJB container
+
+C)   Both A) and B)--
+
+D)   None of the above
+
+ 
+
+ 
+
+ 
+
+Question 18) The two web components are?
+
+ 
+
+A)   Servlets and web.xml
+
+B)   JSP and web.xml
+
+C)   JSP and Servlets---
+
+D)   Servlets and Tag Libraries
+
+ 
+
+Question 19) ?? Identify the correct feature of servlets.
+
+ 
+
+A) Servlets are client-side components that generates dynamic contents.
+
+B) Servlets by default can service only one client request at a time.
+
+C) Servlets are platform dependent.
+
+D) Servlets can service multiple client requests.--
+
+ 
+
+ 
+
+ 
+
+Question 20) What is the status code for the condition when the requested resource is not present?
+
+ 
+
+A)   404--
+
+B)   405
+
+C)   401
+
+D)   500
+
+ 
+
+ 
+
+ 
+
+Question 21) Select the correct order of request-response paradigm between a web-client and a web-server.
+
+ 
+
+1)    The browser interprets the response and represents the contents on the screen.
+
+2)    The web server determines the kind of request (GET or POST) and which file is being requested, and sends the data in that file back as the response.
+
+3)    The web browser sends a request to the server.
+
+ 
+
+ 
+
+A)   2), 3), 1)
+
+B)   2), 1), 3)
+
+C)   1), 3), 2)
+
+D)   3), 2), 1)--
+
+ 
+
+Question 22) Which method is invoked only once in the life cycle of a servlet?
+
+ 
+
+A) init()--
+
+B) doPost()
+
+C) service()
+
+D) doGet()
+
+ 
+
+ 
+
+Question 23) Which of the following statement is true?
+
+ 
+
+A) The init() method calls the doGet() method
+
+B) The doPost() method calls the doGet() method--
+
+C) The container directly calls the doGet() method
+
+D) The service() method calls doGet() method
+
+ 
+
+ 
+
+Question 24) Which of the following element of the deployment descriptor specifies the name of the servlet class file?
+
+ 
+
+A) <servlet>
+
+B) <servlet-class>---
+
+C) <servlet-name>
+
+D) <display-name>
+
+ 
+
+ 
+
+Question 25) Which of the following is a feature of the GET method?
+
+ 
+
+A) Handles most request types including file uploading and form submissions
+
+B) Data is passed in the request body
+
+C) Data is passed as query string appended to the URL--
+
+D) There is no limit to the amount of data that can be passed
+
+ 
+
+ 
+
+Question 26) What is the use of setContentType() method of ServletResponse interface?
+
+ 
+
+A) To set the MIME type associated with the request
+
+B) To get the MIME type associated with the request
+
+C) To set the MIME type associated with the response--
+
+D) To get the MIME type associated with the response
+
+ 
+
+ 
+
+Question 27) A servlet, TestServlet is deployed in the J2EE application server installed in your computer with the context root as testctx. Which of the following URL will you specify to access the servlet?
+
+ 
+
+A) http://localhost:8080/testctx/TestServlet
+
+B) http://localhost:8080/testctx/servlet/TestServlet--
+
+C) http://localhost:8080/testctx/servlet/TestServlet.class
+
+D) http://localhost:8080/servlet/testctx/TestServlet
+
+ 
+
+Question 28) Identify the sequence of servlet methods that are invoked when a servlet is accessed for the first time?
+
+ 
+
+A) init(), doPost(), service(), destroy()
+
+B) service(), init(), destroy()
+
+C) init(), doGet(), service(), destroy()
+
+D) init(), service(), doGet()/doPost(), destroy()--
+
+ 
+
+ 
+
+ 
+
+Question 29) Which of the following statement regarding the HTTP POST method is true?
+
+ 
+
+A) Allows sending unlimited length of data as a part of HTTP request body.--
+
+B) Allows creation of bookmarks.
+
+C) Uses simple query strings.
+
+D) POST is the default method unless explicitly specified.
+
+ 
+
+ 
+
+ 
+
+Question 30) Identify the correct sequence in which the Web container calls the life cycle methods of a servlet:
+
+ 
+
+1)    On the arrival of first HTTP request, the Web container loads the servlet class and creates one or more instances of the servlet class.
+
+2)    The Web container invokes the init() method of the servlet instance during initialization of the servlet. The init() method is invoked only once in the servlet life cycle.
+
+3)    The Web container calls the destroy() method before removing the servlet instance from the service. The destroy() method is also invoked only once in a servlet life cycle.
+
+4)    The Web container invokes the service() method to allow a servlet to process a client request.
+
+5)    The servlet then waits to receive and process subsequent client requests.
+
+6)    The service() method processes the request and returns the response back to the Web container, by calling certain doXxx() method.
+
+ 
+
+A)   1), 2), 3), 5), 4), 6)
+
+B)   1), 2), 5), 4), 6), 3)
+
+C)   1), 2), 3), 6), 4), 5)
+
+D)   1), 2), 4), 6), 5), 3)--
+
+ 
+
+ 
+
+ 
+
+
+ 

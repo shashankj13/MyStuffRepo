@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+	
+			<from-outcome>adminlogin</from-outcome>
+			<to-view-id>/adminlogin.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>adminlogin.xhtml</display-name>
+		<from-view-id>/adminlogin.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>adminwelcome</from-outcome>
+			<to-view-id>/adminwelcome.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>customerlogin</from-outcome>
+			<to-view-id>/customerlogin.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>customerlogin.xhtml</display-name>
+		<from-view-id>/customerlogin.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>customerwelcome</from-outcome>
+			<to-view-id>/customerwelcome.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>adminlogin.xhtml</display-name>
+		<from-view-id>/adminlogin.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>adminlogin</from-outcome>
+			<to-view-id>/adminlogin.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>customerlogin.xhtml</display-name>
+		<from-view-id>/customerlogin.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>customerlogin</from-outcome>
+			<to-view-id>/customerlogin.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>adminwelcome.xhtml</display-name>
+		<from-view-id>/adminwelcome.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>adminlogin</from-outcome>
+			<to-view-id>/adminlogin.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>customerwelcome.xhtml</display-name>
+		<from-view-id>/customerwelcome.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>customerlogin</from-outcome>
+			<to-view-id>/customerlogin.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

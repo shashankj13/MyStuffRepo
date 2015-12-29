@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>PRODUCT SEARCH</title>
+</h:head>
+<h:body>
+
+	<h:form >
+		<table border="1" style="color: blue">
+
+			<tr>
+				<td colspan="2" align="center">PRODUCT SEARCH SYSTEM</td>
+			</tr>
+
+
+			<tr>
+				<td>PRODUCT</td>
+				<td><h:selectOneMenu value="#{productBean.productValue}">
+						<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+							<f:selectItems value="#{productBean.productSet}"/>
+						
+					</h:selectOneMenu></td>
+			</tr>
+
+			<tr>
+				<td>VENDOR</td>
+				<td><h:selectOneMenu value="#{productBean.vendorValue}">
+						<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+						<f:selectItems value="#{productBean.vendorSet}"/>
+						
+
+
+					</h:selectOneMenu></td>
+			</tr>
+
+			<tr>
+				<td>CITY</td>
+				<td><h:selectOneMenu value="#{productBean.citytValue}">
+						<f:selectItem itemLabel="----SELECT----" itemValue="sel"/>
+							<f:selectItems value="#{productBean.citySet}"/>
+
+					</h:selectOneMenu></td>
+			</tr>
+
+			<tr>
+				<td>SORT BY ?</td>
+				<td><h:selectOneRadio value="#{productBean.radioValue}">
+						<f:selectItem itemValue="productR" itemLabel="PRODUCT" />
+						<f:selectItem itemValue="vendorR" itemLabel="VENDOR" />
+						<f:selectItem itemValue="cityR" itemLabel="CITY" />
+					</h:selectOneRadio></td>
+			</tr>
+
+			<tr>
+				<td>SEARCH</td>
+				<td><h:commandButton value="SEARCH" action="#{productBean.getProductFromList}"/></td>
+			</tr>
+
+
+		</table>
+	</h:form>
+			<table style="margin-left: 300px">
+			<tr> <td>Product</td> <td>Vendor</td> <td>City</td> </tr>
+		<ui:repeat value="#{productBean.outputList}" var="out">
+			<tr> <td>#{out.productItems}</td> <td>#{out.vendor}</td> <td>#{out.city}</td> </tr>
+		</ui:repeat>
+		</table>
+</h:body>
+</html>

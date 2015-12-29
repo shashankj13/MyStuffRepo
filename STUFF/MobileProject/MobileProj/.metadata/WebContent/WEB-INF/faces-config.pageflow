@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14456724587650" configfile="/MobileProj/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="24" y="179" id="pf14459542444070" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14459542444072 pf14460070818414" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="adminlogin.xhtml" x="252" y="96" id="pf14459542444073" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf14460070818415 pf144602341701812" inlinks="pf14459542444072 pf144602341701812 pf144602844393914" path="/adminlogin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="adminwelcome.xhtml" x="468" y="96" id="pf14460069389130" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf144602844393914" inlinks="pf14460070818415" path="/adminwelcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="customerwelcome.xhtml" x="460" y="204" id="pf14460069389132" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf144602846200815" inlinks="pf14460070818418" path="/customerwelcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="customerlogin.xhtml" x="228" y="204" id="pf14460069389133" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf14460070818418 pf144602341701813" inlinks="pf14460070818414 pf144602341701813 pf144602846200815" path="/customerlogin.xhtml"/>
+  <links id="pf14459542444072" target="pf14459542444073" source="pf14459542444070" outcome="adminlogin" redirect="true"/>
+  <links id="pf14460070818415" target="pf14460069389130" source="pf14459542444073" outcome="adminwelcome" redirect="true"/>
+  <links id="pf14460070818414" target="pf14460069389133" source="pf14459542444070" outcome="customerlogin"/>
+  <links id="pf14460070818418" target="pf14460069389132" source="pf14460069389133" outcome="customerwelcome" redirect="true"/>
+  <links id="pf144602341701812" target="pf14459542444073" source="pf14459542444073" outcome="adminlogin" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf144602341701813" target="pf14460069389133" source="pf14460069389133" outcome="customerlogin" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf144602844393914" target="pf14459542444073" source="pf14460069389130" outcome="adminlogin" redirect="true"/>
+  <links id="pf144602846200815" target="pf14460069389133" source="pf14460069389132" outcome="customerlogin" redirect="true"/>
+</pageflow:Pageflow>

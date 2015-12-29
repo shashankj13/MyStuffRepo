@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14470454824900" configfile="/trainingmanagement/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="122" y="178" id="pf14477464660450" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14477464660451" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="338" y="178" id="pf14477464660452" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14477464660453" inlinks="pf14477464660451" path="/welcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="createcourses.xhtml" x="613" y="125" id="pf14477464660454" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf14477464660453 pf14477768084380" path="/createcourses.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="heading.xhtml" x="718" y="301" id="pf14477768084391" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14477768084380" path="/heading.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="seecourses.xhtml" x="234" y="305" id="pf14479207340490" outlinks="pf14479207340491 pf14479241106052" inlinks="pf14479207340491" path="/seecourses.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="showdetails.xhtml" x="520" y="284" id="pf14479241106053" inlinks="pf14479241106052" path="/showdetails.xhtml"/>
+  <links id="pf14477464660451" target="pf14477464660452" source="pf14477464660450" outcome="welcome" redirect="true"/>
+  <links id="pf14477464660453" target="pf14477464660454" source="pf14477464660452" outcome="createcourses"/>
+  <links id="pf14477768084380" target="pf14477464660454" source="pf14477768084391" outcome="createcourses"/>
+  <links id="pf14479207340491" target="pf14479207340490" source="pf14479207340490" outcome="seecourses" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf14479241106052" target="pf14479241106053" source="pf14479207340490" outcome="showdetails" redirect="true"/>
+</pageflow:Pageflow>

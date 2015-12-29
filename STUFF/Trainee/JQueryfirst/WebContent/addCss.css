@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+#header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+#leftbody {
+	line-height: 30px;
+	background-color: lightblue;
+	height: 650px;
+	width: 200px;
+	float: left;
+	padding: 5px;
+}
+
+#rightbody{
+	background-color: gray;
+	
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}

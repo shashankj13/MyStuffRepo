@@ -1,0 +1,249 @@
+
+Oct 13, 2015 14:11:51.69 NEW SESSION
+Oct 13, 2015 14:11:51.69 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 13, 2015 14:11:51.70 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 13, 2015 14:11:51.70 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 13, 2015 14:12:52.33 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 13, 2015 14:12:52.33 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 13, 2015 14:12:52.33 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 13, 2015 14:14:25.07 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 13, 2015 14:14:25.07 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 13, 2015 14:14:25.07 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 15, 2015 11:00:38.76 NEW SESSION
+Oct 15, 2015 11:00:38.76 1444887038750	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 15, 2015 11:02:16.07 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 11:02:16.07 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 11:02:16.07 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 11:05:58.59 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 11:05:58.59 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 11:05:58.59 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 11:32:57.10 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 11:32:57.10 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 11:32:57.10 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:23:31.17 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:23:31.17 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:23:31.18 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:39:48.85 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:39:48.85 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:39:48.86 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:40:36.40 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:40:36.40 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:40:36.40 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:42:13.55 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:42:13.55 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:42:13.55 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:44:32.68 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:44:32.68 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:44:32.68 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:47:24.43 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:47:24.43 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:47:24.43 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:47:45.82 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 13:47:45.82 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 13:47:45.82 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 15:41:52.73 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 15:41:52.73 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 15:41:52.73 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 15:48:23.33 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 15:48:23.33 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 15:48:23.34 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 15:48:34.94 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 15:48:34.94 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 15:48:34.94 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 20:43:29.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:30.49 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:30.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:30.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:30.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:30.78 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.78 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.78 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.78 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:30.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:31.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:32.02 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:32.02 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:32.02 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:32.02 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,1)
+Oct 15, 2015 20:43:32.04 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.10 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.14 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.17 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.21 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.25 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.30 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.33 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.46 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.53 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.56 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.62 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.64 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.71 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.72 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.77 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.82 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.84 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.90 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.92 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:32.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.02 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.05 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.09 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.14 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.16 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.21 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.25 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.30 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.33 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.36 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.43 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.46 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.49 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.54 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.55 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.88 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.95 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.97 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:33.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.07 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.10 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.12 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.17 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.17 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.60 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.63 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.67 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.71 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.74 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.83 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:34.85 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.09 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.12 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.16 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.22 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.26 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.30 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.35 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.42 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.45 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.51 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.54 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.58 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.60 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.64 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.70 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:35.85 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:36.83 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:36.85 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:37.04 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:37.39 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:37.40 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:37.40 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:37.40 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:37.55 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:37.55 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:48.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:48.09 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:48.24 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.26 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.28 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.29 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.31 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.32 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.34 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.35 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.38 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.40 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.62 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:48.66 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.95 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.96 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.97 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:48.99 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.01 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.03 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.04 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.06 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.07 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.10 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.11 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.12 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.13 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.16 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:49.18 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.13 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.20 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.23 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.35 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.37 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.39 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.45 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.45 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.51 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.52 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.58 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.60 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.64 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.68 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.70 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.73 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:50.81 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:50.94 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:51.22 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.44 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:57.45 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:57.48 [GFX1-]: Failed to allocate a surface due to invalid size Size(1,0)
+Oct 15, 2015 20:43:57.54 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.59 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.60 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.67 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.68 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.83 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:57.98 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:58.16 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:43:58.42 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.42 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.43 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.44 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.48 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.50 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.51 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.53 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.55 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.57 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.59 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.61 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.68 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+Oct 15, 2015 20:45:34.87 [GFX1-]: Failed to allocate a surface due to invalid size Size(0,0)
+
+Oct 20, 2015 13:21:07.46 NEW SESSION
+Oct 20, 2015 13:21:07.46 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 20, 2015 13:21:07.50 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 20, 2015 13:21:07.50 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 20, 2015 21:10:02.95 NEW SESSION
+Oct 20, 2015 21:10:02.95 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 20, 2015 21:10:02.95 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 20, 2015 21:10:02.95 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21

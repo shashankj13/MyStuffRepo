@@ -1,0 +1,145 @@
+package com.yash.training.tmp.bean;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import javax.inject.Inject;
+
+import com.yash.training.tmp.domain.Course;
+import com.yash.training.tmp.service.CourseServiceLocal;
+
+@ManagedBean
+@SessionScoped
+public class CourseBean {
+	
+	private int id;
+	private String title;
+	private String desc;
+	private String ref;
+	private boolean status=true;
+	private int allActiveCoursesCount;
+	private int allCurrentCoursesCount;
+	
+	public int getAllActiveCoursesCount() {
+		return allActiveCoursesCount;
+	}
+
+	public void setAllActiveCoursesCount(int allActiveCoursesCount) {
+		this.allActiveCoursesCount = allActiveCoursesCount;
+	}
+
+	public int getAllCurrentCoursesCount() {
+		return allCurrentCoursesCount;
+	}
+
+	public void setAllCurrentCoursesCount(int allCurrentCoursesCount) {
+		this.allCurrentCoursesCount = allCurrentCoursesCount;
+	}
+
+	List<Course> courseList = new ArrayList<>();
+
+
+	public List<Course> getCourseList() {
+		return courseList;
+	}
+
+	public void setCourseList(List<Course> courseList) {
+		this.courseList = courseList;
+	}
+
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public String getRef() {
+		return ref;
+	}
+
+	public void setRef(String ref) {
+		this.ref = ref;
+	}
+
+	@Inject
+	Course course;
+	
+	@EJB
+	CourseServiceLocal courseServiceLocal;
+	
+	public String saveCourse() throws Exception{
+		
+		System.out.println(status);
+		
+		course.setCourse_desc(desc);
+		course.setReference(ref);
+		course.setCourse_title(title);
+		if(status){
+			course.setCourse_status(1);
+		}
+		
+		if(!status){
+			course.setCourse_status(0);
+		}
+		
+		System.out.println("+++---------------------------" + desc + "-----------------------" + title);
+		courseServiceLocal.createCourseService(course);
+		
+		return null;
+	}
+	
+	public String getAllCourses(){
+		
+		courseList = courseServiceLocal.getAllCoursesService();		
+		
+		return "seecourses";
+	}
+	
+	public String deleteSelectedCourses(){
+		
+		return null;
+	} 
+	
+	@PostConstruct
+	public void getActiveAndAllCourses(){
+		
+		allActiveCoursesCount = courseServiceLocal.getTotalActiveCourses();
+		allCurrentCoursesCount = courseServiceLocal.getTotalCourses();
+		System.out.println(allActiveCoursesCount + allCurrentCoursesCount +"----------------------" );
+		
+		
+	}
+	
+
+}

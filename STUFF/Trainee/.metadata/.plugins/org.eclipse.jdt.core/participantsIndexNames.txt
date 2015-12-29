@@ -1,0 +1,17 @@
+INDEX VERSION 1.126
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2243281993.index
+\EnquiryManagementSystem\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\113159958.index
+\JQueryDemo\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\153283395.index
+\JspCustomerProject\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\746226008.index
+\CustomTagDemo\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1169291505.index
+\CurdCDIProj\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2948354437.index
+\EnquiryManagementSystem\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2054874132.index
+\EnquiryManagementProject\src
+D:\Trainee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\990447578.index
+\AjaxProject1\src

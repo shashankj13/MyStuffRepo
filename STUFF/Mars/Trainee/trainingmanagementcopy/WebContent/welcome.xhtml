@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/template/facelet.xhtml">
+
+	<ui:define name="content">
+		
+		<div id="container">
+			<div id="leftdiv"
+				style="float: left; height: 363px; width: 50px; margin-right: 50px">
+
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a href="#" class="tooltips"> <img src="1.jpg" alt="1 not load"
+						height="40px" width="40px" /> <span>DASHBOARD</span>
+					</a>
+
+
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<h:form>
+						<h:commandLink action="#{courseBean.getAllCourses}"
+							class="tooltips">
+							<img src="2.png" alt="2 not load" height="40px" width="40px" />
+							<span>COURSES</span>
+						</h:commandLink>
+					</h:form>
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a class="tooltips"> <img src="3.png" alt="3 not load"
+						height="40px" width="40px" /><span>PEOPLE</span>
+					</a>
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a class="tooltips"> <img src="4.png" alt="4 not load"
+						height="40px" width="40px" /><span>TEAM</span>
+					</a>
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a class="tooltips"> <img src="5.png" alt="5 not load"
+						height="40px" width="40px" /><span>REPORTS</span>
+					</a>
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a class="tooltips"> <img src="6.png" alt="6 not load"
+						height="40px" width="40px" /><span>MESSAGES</span>
+					</a>
+				</div>
+				<div
+					style="border: 1px solid; height: 50px; background-color: white; margin-bottom: 2px">
+					<a class="tooltips"> <img src="7.png" alt="7 not load"
+						height="40px" width="40px" /><span>SETTINGS</span>
+					</a>
+				</div>
+
+			</div>
+
+			<div id="dashboarddiv" style="float: left; margin-right: 150px;">
+
+
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">DASHBOARD</a></li>
+						<li><a href="#tabs-2">ACTIVITY</a></li>
+					</ul>
+
+					<div id="tabs-1"
+						style="height: 200px; width: 700px; border: 1px solid">
+
+						<div
+							style="text-align: center; background-color: #CCCCCC; height: 150px; width: 150px; float: left; margin: 10px 20px 0px 10px">
+							<div class="circle" style="color: white; padding-top: 30px">
+								<h:outputText value="#{courseBean.allCurrentCoursesCount}"></h:outputText>
+							</div>
+							<div style="color: #404040; font-size: 16px; margin-top: 6px">Total
+								Courses</div>
+							<br />
+							<br />
+							<br />
+						</div>
+						<div
+							style="text-align: center; background-color: #CCCCCC; height: 150px; width: 150px; float: left; margin: 10px 20px 0px 0px">
+							<div class="circle" style="color: white; padding-top: 30px">
+								<h:outputText value="#{courseBean.allActiveCoursesCount}"></h:outputText>
+							</div>
+							<div style="color: #404040; font-size: 16px; margin-top: 6px">Active
+								Courses</div>
+							<br />
+							<br />
+						</div>
+						<div
+							style="background-color: #CCCCCC; height: 150px; width: 150px; float: left; margin: 10px 20px 0px 0px">BOX
+							3</div>
+						<div
+							style="background-color: #CCCCCC; height: 150px; width: 150px; float: left; margin: 10px 20px 0px 0px">BOX
+							4</div>
+						<div
+							style="background-color: #E0EEEE; height: 20px; width: 680px; float: left; margin: 10px 0px 0px 10px">
+							LAST UPDATED</div>
+					</div>
+					<div id="tabs-2" style="height: 200px; width: 700px;">ACTIVITY</div>
+				</div>
+				<div id="middlediv2"
+					style="height: 250px; width: 755px; border: 1px solid; margin-top: 20px; margin-bottom: 20px; background-color: white">
+
+					<div
+						style="background-color: #E0EEEE; height: 210px; width: 320px; float: left; margin: 10px 0px 0px 10px">
+					</div>
+					<div
+						style="background-color: #E0EEEE; height: 210px; width: 320px; float: left; margin: 10px 0px 0px 10px">
+					</div>
+
+				</div>
+				<div id="middlediv3"
+					style="height: 240px; width: 755px; border: 1px solid">
+					<div id="chartContainer" style="height: 210px; width: 730px;"></div>
+
+				</div>
+
+			</div>
+
+
+			<div id="rightdiv"
+				style="height: 200px; width: 260px; border: 1px solid; float: left">
+
+				<div id="rdheading"
+					style="background-color: gray; text-align: center; margin-bottom: 10px">
+					ACTION</div>
+				<h:form>
+					<div id="button1" style="margin: 20px 0px 0px 40px">
+						<h:commandButton value="Create a course    > "
+							action="createcourses" class="btn-user-welcome">
+						</h:commandButton>
+					</div>
+				</h:form>
+				<div id="button2" style="margin: 10px 0px 0px 40px">
+					<h:commandButton value="Create a user    > "
+						class="btn-user-welcome" />
+				</div>
+				<div id="button3" style="margin: 10px 0px 0px 40px">
+					<h:commandButton value="Create a team    > "
+						class="btn-user-welcome" />
+				</div>
+
+			</div>
+
+		</div>
+	</ui:define>
+
+</ui:composition>
+</html>

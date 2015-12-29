@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/TomEE1 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="TomEE1 at localhost" name="TomEE1 at localhost" runtime-id="TomEE1" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="CodeToCorrect::org.eclipse.jst.jee.server:CodeToCorrect::jst.web::3.0" value1="JsfAssignment3Cart::org.eclipse.jst.jee.server:JsfAssignment3Cart::jst.web::3.0"/>
+  </server>
+</servers>

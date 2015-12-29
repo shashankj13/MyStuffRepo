@@ -1,0 +1,9 @@
+package com.yash.restproj.rest;
+
+import javax.ws.rs.Path;
+
+@Path("/RestClass")
+public class RestClass {
+	
+
+}

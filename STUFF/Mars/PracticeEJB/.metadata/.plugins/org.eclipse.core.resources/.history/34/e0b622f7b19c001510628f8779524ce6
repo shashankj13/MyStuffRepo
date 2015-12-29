@@ -1,0 +1,22 @@
+package com.yash.demo;
+
+class A{
+public void A1(){
+		throw new RuntimeException();
+	}
+	
+}
+
+class B extends A{
+	
+	public void B1(){
+		A1();
+	}
+}
+
+class ThreadDemo{
+	public static void main(String ars[]){
+		B1();
+	
+	}
+}

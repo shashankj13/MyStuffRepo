@@ -1,0 +1,72 @@
+package com.yash.training.tmp.util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+
+/**
+ * 
+ * @author honey.merwani
+ *
+ */
+public class DButil {
+	
+	/**
+	 *  Variables in DBUtil
+	 */
+	
+    static String driverClassName="com.mysql.jdbc.Driver";
+    static String url="jdbc:mysql://localhost/trainingmanagement";
+    static String userName="root";
+    static String password="root";
+    static Connection connection;
+    
+    
+    /**
+     * This method is used to connect to the DB
+     */
+  
+    public static Connection connectDB()throws Exception{
+        Class.forName(driverClassName);
+        connection=DriverManager.getConnection(url, userName, password);
+        return connection;        
+    }
+    
+    /**
+     * This is Used For All DML queries (UPDATE , INSERT , DELETE)
+     */
+    
+    public static void update(String sql) throws Exception{
+    	 connection = connectDB();
+        PreparedStatement preparedStatement=connection.prepareStatement(sql);
+        preparedStatement.executeUpdate(); 
+    }
+    
+    /**
+     * Select Method and Returns a ResultSet 
+     */
+    
+    public static ResultSet select(String sql){
+        try{
+        	connection = connectDB();
+        PreparedStatement preparedStatement=connection.prepareStatement(sql);
+        ResultSet resultSet=preparedStatement.executeQuery();
+        return resultSet;
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+            throw new RuntimeException(ex);
+        }
+    }
+    
+    /**
+     *Disconnect the DB
+     */
+    
+    public static void disconnectDB() throws Exception{
+        connection.close();
+    }
+
+}
